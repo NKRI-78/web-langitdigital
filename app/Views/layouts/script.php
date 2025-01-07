@@ -16,6 +16,9 @@
 <!-- App Js -->
 <script src="<?= base_url('public/js/app.js') ?>"></script>
 
+<!-- custom cdn -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
 </body>
 
 </html>

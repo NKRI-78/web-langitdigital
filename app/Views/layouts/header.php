@@ -30,6 +30,9 @@
 
     <!-- css -->
     <link rel="stylesheet" href="<?= base_url('public/css/style.min.css') ?>" type="text/css" />
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
