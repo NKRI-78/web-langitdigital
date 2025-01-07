@@ -16,7 +16,7 @@ $routes->setAutoRoute(true);
 
 $routes->get('init', 'InitController::index', ['namespace' => 'App\Controllers\Init']);
 
-$routes->get('/', 'LoginController::index', ['namespace' => 'App\Controllers\Auth']);
+$routes->get('/', 'HomeController::index', ['namespace' => 'App\Controllers']);
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
   require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
