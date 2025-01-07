@@ -25,10 +25,58 @@
         z-index: 3;
     }
 
-    .item-squer{
-        position: absolute; 
-        top: -1rem; 
-        /* z-index: 1 !important; */
+    .item-squer {
+        position: absolute;
+        top: -2rem;
+        z-index: 1;
+    }
+
+    /* css slider */
+    .swiper {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+    }
+
+    .card {
+        width: 90%;
+        max-width: 500px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: left;
+    }
+
+    .stars {
+        font-size: 20px;
+        color: #ffcc00;
+        margin-bottom: 10px;
+    }
+
+    .client-info {
+        display: flex;
+        /* align-items: center; */
+        margin-top: 20px;
+    }
+
+    .client-photo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
     }
 </style>
 
@@ -109,7 +157,7 @@
                     <div class="d-flex" style="gap: 20px; margin-top: 2rem; margin-left: 4rem;">
                         <img src="<?= base_url('public/images/bulet.png') ?>" alt="bulet">
                         <img src="<?= base_url('public/images/kotak.png') ?>" alt="kotak">
-                        <img src="<?= base_url('public/images/web.png') ?>" alt="web" style="position: absolute;top: 12.5rem;left: 5.5rem;">
+                        <img src="<?= base_url('public/images/web.png') ?>" alt="web" style="position: absolute; top: 12.5rem;left: 5.5rem;">
                     </div>
                     <h3 style="margin-left: 4.5rem">Pengembang Situs Web</h3>
                     <p style="color: grey; text-align: left; max-width: 32rem;">Website adalah langkah penting dalam menghadapi era digital yang semakin maju,
@@ -184,8 +232,8 @@
                     <div class="image-container" style="margin-top: 2rem; margin-bottom: 1rem; margin-right: 9rem;">
                         <img class="img-mini" src="<?= base_url('public/images/miniCooper.png') ?>" alt="bulet">
                         <img class="hover-image" src="<?= base_url('public/images/phone-mini.png') ?>" alt="web">
-                        <img class="item-squer" src="<?= base_url('public/images/squer.png') ?>" alt="kotak">
                     </div>
+                    <img class="item-squer" src="<?= base_url('public/images/squer.png') ?>" alt="kotak">
                     <h3>Mini Cooper</h3>
                     <a href="#" style="color: #293C93; font-size: 16px; font-weight: 400;">Mobile Apps</a>
                 </div>
@@ -256,102 +304,162 @@
         <div class="row">
             <div class="col-12" style="top: -250px; left: 3.5rem;">
                 <h2 style="font-size: 40px">What Our Clients <br> Say About Us</h2>
+                <img src="<?= base_url('public/images/squer.png') ?>" alt="kotak" style="top: 6rem; right: 11rem; position:absolute">
             </div>
+
+            <!-- Swiper Container -->
+            <div class="swiper mySwiper" style="top: -13rem;">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="stars" style="margin-left: -19rem;">⭐⭐⭐⭐⭐</p>
+                                <p style="text-align: justify;">Kami merasa senang dan bangga karena kami telah dibantu
+                                    untuk memiliki aplikasi yang diperuntukan bagi para anggota kami
+                                    sebagai sumber komunikasi dan informasi serta kami dapat berbagi informasi
+                                    kepada publik tentang komunitas kami dan apa yang telah kami lakukan untuk
+                                    masyarakat luas </p>
+                                <div class="client-info">
+                                    <img src="<?= base_url('public/images/org.png') ?>" alt="client" class="client-photo">
+                                    <div style="text-align: left;">
+                                        <h6>Frans Abdullah</h6>
+                                        <p>Founder SKYE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="stars" style="margin-left: -19rem;">⭐⭐⭐⭐⭐</p>
+                                <p style="text-align: justify;">Kami merasa senang dan puas dengan
+                                    pelayanan yang telah di berikan oleh Langit Digitial 78 dengan tim
+                                    yang berkerja dengan passion mereka, semua berjalan baik dan sesuai
+                                    dengan jadwal yang telah di tentukan. Saat ini aplikasi masih kami
+                                    pergunakan dan semua senang karena dapat memenuhi kebutuhan dari club.
+                                    Mungkin kami akan bekerja sama kembali dengan project yang berbeda.</p>
+                                <div class="client-info">
+                                    <img src="<?= base_url('public/images/org.png') ?>" alt="client" class="client-photo">
+                                    <div style="text-align: left;">
+                                        <h6>Alex Copen</h6>
+                                        <p>Founder SKYE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="stars" style="margin-left: -19rem;">⭐⭐⭐⭐⭐</p>
+                                <p style="text-align: justify;">Kami merasa senang dan puas dengan
+                                    pelayanan yang telah di berikan oleh Langit Digitial 78 dengan tim
+                                    yang berkerja dengan passion mereka, semua berjalan baik dan sesuai
+                                    dengan jadwal yang telah di tentukan. Saat ini aplikasi masih kami
+                                    pergunakan dan semua senang karena dapat memenuhi kebutuhan dari club.
+                                    Mungkin kami akan bekerja sama kembali dengan project yang berbeda.</p>
+                                <div class="client-info">
+                                    <img src="<?= base_url('public/images/org.png') ?>" alt="client" class="client-photo">
+                                    <div style="text-align: left;">
+                                        <h6>Chaerudin</h6>
+                                        <p>Founder SKYE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+            </div>
+            <div class="swiper-pagination" style="bottom: 17rem;"></div>
         </div>
     </div>
 </section>
 <!--END HOME-->
 
 <!-- Our Happy Clients -->
-<section class="section" id="home">
+<section class="section" id="home" style="margin-top: -16rem;">
     <div class="container">
         <div class="row">
             <h1 style="position: absolute; transform: rotate(-90deg); left: 35rem; top: -29rem; font-size: 100px; color:#293C93">Testimonials</h1>
             <h2 style="text-align: center; font-size: 40px">Our Happy Clients</h2>
             <div style=" display: flex; padding: 0 3rem; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
                 <div style="width: 118px; height: 119px; display: flex; align-items: center;">
-                    <img src="<?= base_url('public/images/AMULET.png') ?>" alt="logo">
+                    <img src="<?= base_url('public/images/AMULET.svg') ?>" alt="logo">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/CEK-PINJOL.png') ?>" alt="logo">
+                    <img src="<?= base_url('public/images/CEK-PINJOL.svg') ?>" alt="logo">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/FASI.png') ?>" alt="logo">
+                    <img src="<?= base_url('public/images/FASI.svg') ?>" alt="logo">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/FSPMI1.png') ?>" alt="logo" style="width: 117px; height: 119px;">
+                    <img src="<?= base_url('public/images/FSPMI.svg') ?>" alt="logo" style="width: 117px; height: 119px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/LOGO-TOKOBONA.png') ?>" alt="logo" style="width: 117px; height: 32px;">
+                    <img src="<?= base_url('public/images/LOGO-TOKOBONA.svg') ?>" alt="logo" style="width: 117px; height: 32px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/LOGO-IKAL.png') ?>" alt="logo" style="width: 82px; height: 82px;">
+                    <img src="<?= base_url('public/images/LOGO-IKAL(1).svg') ?>" alt="logo" style="width: 82px; height: 82px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/SALAM-LESTARI.png') ?>" alt="logo" style="width: 131px; height: 131px;">
+                    <img src="<?= base_url('public/images/LOGO-SALAM-LESTARI.svg') ?>" alt="logo" style="width: 131px; height: 131px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/HOG1.png') ?>" alt="logo" style="width: 118px; height: 117px;">
+                    <img src="<?= base_url('public/images/HOG.svg') ?>" alt="logo" style="width: 118px; height: 117px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/KOSGORO.png') ?>" alt="logo" style="width: 119px; height: 117px;">
+                    <img src="<?= base_url('public/images/KOSGORO.svg') ?>" alt="logo" style="width: 119px; height: 117px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/MERCEDES1.png') ?>" alt="logo" style="width: 119px; height: 117px;">
+                    <img src="<?= base_url('public/images/MERCEDES.svg') ?>" alt="logo" style="width: 119px; height: 117px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/MINI-COOPER.png') ?>" alt="logo" style="width: 117px; height: 117px;">
+                    <img src="<?= base_url('public/images/MINI-COOPER.svg') ?>" alt="logo" style="width: 117px; height: 117px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/LINGKUNGANKU.png') ?>" alt="logo" style="width: 104px; height: 41px;">
+                    <img src="<?= base_url('public/images/LINGKUNGANKU.svg') ?>" alt="logo" style="width: 104px; height: 41px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/LOGO-MHS.png') ?>" alt="logo" style="width: 65px; height: 62px;">
+                    <img src="<?= base_url('public/images/LOGO-MHS-CMS.svg') ?>" alt="logo" style="width: 65px; height: 62px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/PEPABRI-LOGO.png') ?>" alt="logo" style="width: 75px; height: 75px;">
+                    <img src="<?= base_url('public/images/PEPABRI-LOGO.svg') ?>" alt="logo" style="width: 75px; height: 75px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/PPI-DUNIA.png') ?>" alt="logo" style="width: 118px; height: 120px;">
+                    <img src="<?= base_url('public/images/PPI-DUNIA.svg') ?>" alt="logo" style="width: 118px; height: 120px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/SAHABAT-DISABILITAS.png') ?>" alt="logo" style="width: 119px; height: 120px;">
+                    <img src="<?= base_url('public/images/SAHABAT-DISABILITAS.svg') ?>" alt="logo" style="width: 119px; height: 120px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/SAKA(1).png') ?>" alt="logo" style="width: 119px; height: 120px;">
+                    <img src="<?= base_url('public/images/SAKA.svg') ?>" alt="logo" style="width: 119px; height: 120px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/STARLET.png') ?>" alt="logo" style="width: 118px; height: 119px;">
+                    <img src="<?= base_url('public/images/STARLET.svg') ?>" alt="logo" style="width: 118px; height: 119px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/LOGO-HTCI.png') ?>" alt="logo" style="width: 95px; height: 44px;">
+                    <img src="<?= base_url('public/images/LOGO-HTCI.svg') ?>" alt="logo" style="width: 95px; height: 44px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/LOGO-KOPERASI-YAMAHA.png') ?>" alt="logo" style="width: 77px; height: 76px;">
+                    <img src="<?= base_url('public/images/LOGO-KOPERASI-YAMAHA-PNG.svg') ?>" alt="logo" style="width: 77px; height: 76px;">
                 </div>
                 <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
-                    <img src="<?= base_url('public/images/MUSLIMAPP-LOGO.png') ?>" alt="logo" style="width: 93px; height: 56px;">
+                    <img src="<?= base_url('public/images/MUSLIMAPP-LOGO.svg') ?>" alt="logo" style="width: 93px; height: 56px;">
                 </div>
             </div>
-            <h2 style="text-align: center; font-size: 40px">Our Location</h2>
+            <h2 style="text-align: center; font-size: 40px; top: 3rem;">Our Location</h2>
         </div>
     </div>
 </section>
 <!--END HOME-->
-
-<!-- <div class="container-fluid">
-        <div class="row">
-            <div class="home-shape-arrow">
-                <a href="#features" class="mouse-down">
-                    <svg class="arrows">
-                        <path class="a1" d="M0 0 L25 22 L50 0"></path>
-                        <path class="a2" d="M0 15 L25 40 L50 15"></path>
-                        <path class="a3" d="M0 30 L25 54 L50 30"></path>
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </div> -->
 
 <!-- START FOOTER -->
 <footer class="section footer" style="background-image: url('public/images/jakarta.png'); height: 647px; background-repeat: no-repeat; background-size: cover; background-position: center; filter: brightness(87%)">
@@ -383,3 +491,16 @@
 <!--end back-to-top-->
 
 <?= view('layouts/script'); ?>
+<script>
+    var swiper = new Swiper('.mySwiper', {
+        loop: true, // Slider loop
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Membuat pagination interaktif
+        },
+        autoplay: {
+            delay: 5000, // Otomatis geser tiap 5 detik
+            disableOnInteraction: false,
+        },
+    });
+</script>
