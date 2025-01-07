@@ -1,17 +1,17 @@
 <?php
 
-namespace App\Controllers\Auth;
+namespace App\Controllers;
 
 use App\Controllers\Base\BaseController;
 use Config\Services;
 use GuzzleHttp\Client;
 
-class LoginController extends BaseController
+class HomeController extends BaseController
 {
     public function index()
     {
         // return view("errors/html/maintenance");
-        return view("auth/index-1");
+        return view("home/index-1");
     }
 
     // public function store()

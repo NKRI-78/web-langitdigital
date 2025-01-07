@@ -1,81 +1,36 @@
-<?php
+<nav class="navbar navbar-expand-lg fixed-top navbar-white navbar-custom sticky" id="navbar">
+    <div class="container">
+        <!-- LOGO -->
+        <a class="navbar-brand text-uppercase" href="index-1.html">
+            <img class="logo-light" src="<?= base_url('public/assets/images/logo-langit.png') ?>" alt="" height="40">
+            <img class="logo-dark" src="<?= base_url('public/assets/images/logo-langit.png') ?>" alt="" height="40">
+        </a>
 
-use Config\Services;
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="mdi mdi-menu"></span>
+            <!-- toggle button -->
+        </button>
 
-$request = Services::request();
-
-?>
-<!-- TOP Nav Bar -->
-<div class="iq-top-navbar">
-  <div class="iq-navbar-custom">
-    <div class="iq-sidebar-logo">
-      <div class="top-logo">
-      </div>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light p-0">
-      <div class="navbar-left">
-        <div class="iq-search-bar">
-          <form action="#" class="searchbox">
-            <input type="text" class="text search-input" placeholder="Type here to search...">
-            <a class="search-link" href="#"><i class="ri-search-line"></i></a>
-            <div class="searchbox-datalink">
-              <!-- <h6 class="pl-3 pt-3">Pages</h6> -->
-              <ul class="m-0 pl-3 pr-3 pb-3">
-                <?php if (session('role') == "user") { ?>
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/dashboard") ?>" class="nav-link"><i class="ri-home-4-line"></i>&nbsp;Dashboard</a></li>
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/member") ?>" class="nav-link"><i class="ri-shield-user-line"></i><span>&nbsp;Member</span></a></li>
-                  <!-- <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/banner") ?>" class="nav-link"><i class="ri-image-line"></i>&nbsp;Banner</a></li> -->
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/event") ?>" class="nav-link"><i class="ri-calendar-event-line"></i>&nbsp;Event</a></li>
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/news") ?>" class="nav-link"><i class="ri-newspaper-line"></i>&nbsp;News</a></li>
-                <?php } ?>
-                <?php if (session('role') == "SUPER_ADMIN") { ?>
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/dashboard") ?>" class="nav-link"><i class="ri-home-4-line"></i>&nbsp;Dashboard</a></li>
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/member") ?>" class="nav-link"><i class="ri-shield-user-line"></i><span>&nbsp;Member</span></a></li>
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/banner") ?>" class="nav-link"><i class="ri-image-line"></i>&nbsp;Banner</a></li>
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/event") ?>" class="nav-link"><i class="ri-calendar-event-line"></i>&nbsp;Event</a></li>
-                  <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/news") ?>" class="nav-link"><i class="ri-newspaper-line"></i>&nbsp;News</a></li>
-                  <!-- <li class="iq-bg-primary-hover rounded"><a href="<?= base_url("admin/contribution") ?>" class="nav-link"><i class="ri-money-dollar-box-line"></i>&nbsp;Kontribusi</a></li> -->
-                  
-                <?php } ?>
-              </ul>
-            </div>
-          </form>
+        <div class="collapse navbar-collapse customNav" id="navbarCollapse">
+            <ul class="navbar-nav" id="navbar-navlist">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#review">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mb-3 mb-lg-0" href="#contact">Kontak</a>
+                </li>
+            </ul>
         </div>
-      </div>
-      <div class="iq-menu-bt align-self-center" style="right: 58rem !important;">
-        <div class="wrapper-menu">
-          <div class="main-circle"><i class="ri-arrow-left-s-line"></i></div>
-          <div class="hover-circle"><i class="ri-arrow-right-s-line"></i></div>
-        </div>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      </div>
-      <ul class="navbar-list">
-        <li>
-          <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center bg-custom rounded">
-            <img src="<?= base_url('public/assets/images/man.png') ?>" class="img-fluid rounded mr-3" alt="user">
-            <div class="caption">
-              <h6 class="mb-0 line-height text-white"><?= session('fullname') ?></h6>
-              <span class="font-size-12 text-white"><?= session('email') ?></span>
-              <!-- <span class="font-size-12 text-white">Available</span> -->
-            </div>
-          </a>
-          <div class="iq-sub-dropdown iq-user-dropdown">
-            <div class="iq-card shadow-none m-0">
-              <div class="iq-card-body p-0 ">
-                <div class="bg-custom p-3">
-                  <h5 class="mb-0 text-white line-height"><?= session('fullname') ?></h5>
-                  <span class="text-white font-size-12"><?= session('email') ?></span>
-                </div>
-                <div class="d-inline-block w-100 text-center p-3">
-                  <a class="bg-custom iq-sign-btn" href="<?= base_url("auth/logout") ?>" role="button">Sign out<i class="ri-login-box-line ml-2"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
-<!-- TOP Nav Bar END -->
+    </div><!-- End container -->
+</nav>
+<!-- End Navbar -->
