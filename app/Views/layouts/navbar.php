@@ -15,16 +15,16 @@
         <div class="collapse navbar-collapse customNav" id="navbarCollapse">
             <ul class="navbar-nav" id="navbar-navlist">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#home">Beranda</a>
+                    <a class="nav-link active" href="<?= base_url("#home") ?>">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#features">Tentang Kami</a>
+                    <a class="nav-link" href="<?= base_url("#aboutUs") ?>">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#review">Layanan</a>
+                    <a class="nav-link" href="#service">Layanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#team">Portfolio</a>
+                    <a class="nav-link" href="#portofolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mb-3 mb-lg-0" href="#contact">Kontak</a>

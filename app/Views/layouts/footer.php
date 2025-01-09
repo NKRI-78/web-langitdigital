@@ -1,5 +1,5 @@
  <!-- FOOTER-ALT -->
- <div class="footer-alt pt-5 pb-5" style="background-color: #293C93; color:#fff">
+ <div class="footer-alt pt-5 pb-5" id="contact" style="background-color: #293C93; color:#fff">
      <div class="container"">
             <div class=" row">
          <div class="col-lg-12">

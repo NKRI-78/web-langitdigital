@@ -10,7 +10,6 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        // return view("errors/html/maintenance");
         return view("home/index-1");
     }
 
