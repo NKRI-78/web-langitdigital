@@ -6,11 +6,11 @@ use App\Controllers\Base\BaseController;
 use Config\Services;
 use GuzzleHttp\Client;
 
-class HomeController extends BaseController
+class AboutUsController extends BaseController
 {
     public function index()
     {
-        return view("home/index-1");
+        return view("home/index-2");
     }
 
     // public function store()
