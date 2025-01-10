@@ -69,6 +69,7 @@
 
 .feature-card p.content {
   color: rgba(0, 0, 0, 0.42);
+  font-size: 0.875rem;
 }
 
 .feature-card > .header > img {
@@ -113,6 +114,10 @@
   width: 100%;
 }
 
+#ourWorks .content-wrapper > div > h5 {
+  width: 20rem;
+}
+
 .image-container .hover-image {
   display: none;
   position: relative;
@@ -155,7 +160,7 @@
 }
 
 .swiper-slide .item-slide {
-  width: 12rem;
+  width: 100%;
 }
 
 #slider {
