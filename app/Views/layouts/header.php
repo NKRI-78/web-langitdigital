@@ -14,6 +14,9 @@
     <!-- fevicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
 
+    <link rel="stylesheet" href="<?= base_url('public/css/custom/web.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/custom/mobile.css') ?>">
+
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.min.css') ?>" type="text/css" />
 
