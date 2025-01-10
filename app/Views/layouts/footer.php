@@ -1,4 +1,4 @@
- <!-- FOOTER-ALT -->
+<!-- FOOTER-ALT -->
  <div class="footer-alt pt-5 pb-5" id="contact" style="background-color: #293C93; color:#fff">
      <div class="container"">
             <div class=" row">
@@ -35,22 +35,22 @@
  </div>
  <!-- END FOOTER-ALT -->
 
- <script>
-     function copyToClipboard(text) {
-         // Create a temporary input element
-         const tempInput = document.createElement("input");
-         tempInput.value = text;
-         document.body.appendChild(tempInput);
+<script>
+    function copyToClipboard(text) {
+        // Create a temporary input element
+        const tempInput = document.createElement("input");
+        tempInput.value = text;
+        document.body.appendChild(tempInput);
 
-         // Select and copy the text
-         tempInput.select();
-         tempInput.setSelectionRange(0, 99999); // For mobile devices
-         document.execCommand("copy");
+        // Select and copy the text
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999); // For mobile devices
+        document.execCommand("copy");
 
-         // Remove the temporary input element
-         document.body.removeChild(tempInput);
+        // Remove the temporary input element
+        document.body.removeChild(tempInput);
 
-         // Optional: Alert the user
-         alert("Copied to clipboard: " + text);
-     }
- </script>
+        // Optional: Alert the user
+        alert("Copied to clipboard: " + text);
+    }
+</script>

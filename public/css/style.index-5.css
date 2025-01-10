@@ -43,6 +43,10 @@
     padding-top: 4rem;
 }
 
+.custom-swiper-slide-cms{
+    width: 12.5rem !important;
+  }
+
 @media (min-width: 1700px) and (max-width: 1710px) {
     .item-bulet-sectionCms {
         left: 49.5rem;

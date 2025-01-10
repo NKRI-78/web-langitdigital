@@ -10,7 +10,7 @@ class AboutUsController extends BaseController
 {
     public function index()
     {
-        return view("home/index-2");
+        return view("about-us/index");
     }
 
     // public function store()

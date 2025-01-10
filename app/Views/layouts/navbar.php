@@ -18,7 +18,7 @@
                     <a class="nav-link <?= (rtrim(current_url(), '/') === rtrim(base_url("/"), '/')) ? 'active' : '' ?>" href="<?= base_url("/") ?>">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= (current_url() == base_url("/tentangKami")) ? 'active' : '' ?>" href="<?= base_url("/tentangKami") ?>">Tentang Kami</a>
+                    <a class="nav-link <?= (current_url() == base_url("/web-development")) ? 'active' : '' ?>" href="<?= base_url("/web-development") ?>">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#service">Layanan</a>

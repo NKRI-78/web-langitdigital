@@ -1,5 +1,12 @@
-.customNav {
+
+/* .customNav {
   flex-grow: 0 !important;
+} */
+
+.image-container {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 9rem;
 }
 
 .image-container .hover-image {
@@ -29,6 +36,7 @@
 
 .footer-custom-index1 {
   background-image: url("../images/jakarta.png");
+  width: 100%;
   height: 647px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -105,8 +113,8 @@
 }
 
 .img-home {
-  width: 100%;
-  height: 597px !important;
+  /* width: 300%; */
+  height: 597px;
   filter: brightness(55%);
 }
 
@@ -195,51 +203,39 @@
   left: 1rem;
 }
 
-.text-cms{
-    margin-left: 2.5rem
+.text-cms {
+  margin-left: 2.5rem;
 }
 
-.text-uiux{
-    margin-left: 7.5rem
+.text-uiux {
+  margin-left: 7.5rem;
 }
 
-/* width google 75% */
-@media (min-width: 1700px) and (max-width: 1710px) {
-  .text-rotate-service {
-    left: 45rem;
-  }
-
-  .text-rotation-ourwork {
-    right: 43.5rem;
-  }
-
-  .text-rotation-testimonial {
-    left: 45rem;
-  }
-
-  .div-params-index1 {
-    padding: 0 9rem;
-  }
+.title-porto {
+  color: #293c93;
+  font-size: 16px;
+  font-weight: 400;
+  text-decoration-line: none;
 }
 
 /* device phone */
-/* @media (min-width: 425px) {
+@media (max-width: 426px) {
   .img-home {
-    width: 218%;
+    /* width: 218%; */
+    width: 100%;
   }
 
-  .div-home2 {
+  /* .div-home2 {
     left: 29rem;
     height: 6rem;
     width: 27rem;
-  }
+  } */
 
   .text-rotate-service {
     left: 39.5rem;
     top: 6rem;
     font-size: 70px;
   }
-
 
   .text-head-service {
     font-size: 25px;
@@ -290,21 +286,61 @@
     left: 12rem;
   }
 
-  .div-cms{
+  .div-cms {
     width: 26rem;
     margin-left: 4rem;
   }
 
-  .text-cms{
+  .text-cms {
     margin-left: 0;
   }
 
-  .div-uiux{
+  .div-uiux {
     width: 26rem;
     margin-left: 4rem;
   }
 
-  .text-uiux{
-    margin-left: 5rem
+  .text-uiux {
+    margin-left: 5rem;
+  }
+
+  .footer-custom-2{
+    width: 211% !important;
+    height: auto
+  }
+
+  .footer-custom-index1 {
+    background-image: url("../images/jakarta.png");
+    /* width: 211%; */
+    background-size: 50% 100%;
+    background-repeat: no-repeat
+    background-position: center;
+  }
+
+  .div-custom-container{
+    width: 211% !important;
+  }
+
+  /* .custom-div-footer2{
+    margin-bottom: -14.7rem;
+  } */
+}
+
+/* width google 75% */
+/* @media (min-width: 1700px) {
+  .text-rotate-service {
+    left: 45rem;
+  }
+
+  .text-rotation-ourwork {
+    right: 43.5rem;
+  }
+
+  .text-rotation-testimonial {
+    left: 45rem;
+  }
+
+  .div-params-index1 {
+    padding: 0 9rem;
   }
 } */
