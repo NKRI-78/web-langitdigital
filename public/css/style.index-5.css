@@ -44,7 +44,11 @@
 }
 
 .custom-swiper-slide-cms{
-    width: 12.5rem !important;
+    width: 22rem !important;
+  }
+
+  .swiper-slide .item-slide-cms {
+    width: 22rem;
   }
 
 @media (min-width: 1700px) and (max-width: 1710px) {
