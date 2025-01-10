@@ -10,7 +10,7 @@ class CmsController extends BaseController
 {
     public function index()
     {
-        return view("home/index-5");
+        return view("content-managment-system/index");
     }
 
     // public function store()

@@ -41,4 +41,4 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+<body>

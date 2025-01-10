@@ -11,7 +11,7 @@
                     <h2 class="sectionCms-text2">CMS Development <br> in Indonesia</h2>
                 </div>
                 <div class="div-sectionCms-img">
-                    <img class="img" src="<?= base_url('public/images/pc2.png') ?>" alt="img-pc" style="position: relative; width: 145%; margin-left: -19rem; z-index: 2;">
+                    <img class="img" src="<?= base_url('public/images/CONTENT-MANAGEMNT-SYSTEM-4x.png') ?>" alt="img-pc" style="position: relative; width: 145%; margin-left: -19rem; z-index: 2;">
                 </div>
             </div>
         </div>
@@ -90,6 +90,49 @@
 </section>
 <!--END HOME-->
 
+<section class="container mt-2" id="slider">
+    <div class="text-center">
+        <h5 class="fs-3">CMS Category</h5>
+        <p>There are many types of CMS you can make here at LangitDigital</p>
+    </div>
+    <div class="swiper" id="customSwiper">
+        <div class="swiper-wrapper container text-center">
+            <!-- Slide 1 -->
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide" src=<?= base_url('public/images/cms-mhs.png') ?> alt="cms mhs">
+                <h6>Metro Hotelschool</h6>
+            </div>
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide" src=<?= base_url('public/images/cms-atj.png') ?> alt="cms atj">
+                <h6>Asosiasi Tiger Jakarta</h6>
+            </div>
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide" src=<?= base_url('public/images/cms-4medan.png') ?> alt="cms 4 medan">
+                <h6>SMA 4 Medan</h6>
+            </div>
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide" src=<?= base_url('public/images/cms-fspmi.png') ?> alt="cms fspmi">
+                <h6>FSPMI</h6>
+            </div>
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide" src=<?= base_url('public/images/cms-hp3ki.png') ?> alt="cms hp3ki">
+                <h6>HP3KI</h6>
+            </div>
+        </div>
+        <!-- Pagination -->
+    </div>
+</section>
+
+<section class="container d-flex flex-column row-gap-4 d-flex m-auto text-center my-4">
+    <div class="d-flex flex-column">
+        <h5 class="fs-3">Asked Questions?</h5>
+        <p>Feel free to contact us</p>
+    </div>
+    <div>
+        <button class="btn-contact-us px-4 py-2">CONTACT US</button>
+    </div>
+</section>
+
 <!-- Our works -->
 <section class="section" id="portofolio-cms">
     <div class="container">
@@ -117,7 +160,13 @@
 <!--end back-to-top-->
 
 <?= view('layouts/footer'); ?>
-
-
-
 <?= view('layouts/script'); ?>
+<script>
+   var swiper = new Swiper('.swiper', {
+    slidesPerView: 4,
+    spaceBetween: 2,
+    autoplay: {
+        // delay: 5000
+    }
+    });
+</script>
