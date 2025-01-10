@@ -1,36 +1,49 @@
 <?= view('layouts/header'); ?>
 <?= view('layouts/navBar'); ?>
 
+<!--Menu Modal -->
+<!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-close">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body m-3">
+                    <div class="modal-body">
+                        <div class="mb-4">
+                            <h4 class="fw-semibold mb-0">Sign Up</h4>
+                            <p class="text-muted">Already Have an account? <a href="javascript:void(0)">Log in here</a> </p>
+                        </div>
+                        <form>
+                            <div class="mb-3 serch-form">
+                                <label class="mb-2" for="Email">Email</label>
+                                <input name="email" id="email" type="email" class="form-control" placeholder="Email">
+                                <span class="input-group-text"><i class="mdi mdi-email-outline"></i></span>
+                            </div>
+                            <div class="mb-2 serch-form">
+                                <label class="mb-2" for="userpassword">Password</label>
+                                <input type="password" class="form-control" id="userpassword" placeholder="Enter Password">
+                                <span class="input-group-text"><i class="mdi mdi-lock-outline"></i></span>
+                            </div>
+                            <div class="text-end">
+                                <a href="recoverpw.html" class="text-muted fs-13"><i class="mdi mdi-lock me-1"></i> Forgot password?</a>
+                            </div>
+                            <div class="mt-4">
+                                <button class="btn btn-primary w-100" type="submit">Log in</button>
+                            </div>
+                        </form>
+                        <p class="text-muted pt-3 mb-0">By signing up You agree to our
+                            <a href="javascript:void(0)" class="text-muted"><u>Privacy Policy</u></a> and <a href="" class="text-muted"><u>Terms of Service</u></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+<!-- end modal -->
+
 <style>
-    .customNav {
-        flex-grow: 0 !important;
-    }
-
-    .image-container .hover-image {
-        display: none;
-        position: relative;
-        z-index: 3;
-    }
-
-    /* Tampilkan gambar hover ketika di-hover */
-    .image-container:hover .img-mini {
-        display: none;
-        position: relative;
-        z-index: 3;
-    }
-
-    .image-container:hover .hover-image {
-        display: block;
-        position: relative;
-        z-index: 3;
-    }
-
-    .item-squer {
-        position: absolute;
-        top: -2rem;
-        z-index: 1;
-    }
-
     /* css slider */
     .swiper {
         width: 100%;
@@ -80,63 +93,21 @@
     }
 </style>
 
-<!--Menu Modal -->
-<!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-                <div class="modal-close">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body m-3">
-                    <div class="modal-body">
-                        <div class="mb-4">
-                            <h4 class="fw-semibold mb-0">Sign Up</h4>
-                            <p class="text-muted">Already Have an account? <a href="javascript:void(0)">Log in here</a> </p>
-                        </div>
-                        <form>
-                            <div class="mb-3 serch-form">
-                                <label class="mb-2" for="Email">Email</label>
-                                <input name="email" id="email" type="email" class="form-control" placeholder="Email">
-                                <span class="input-group-text"><i class="mdi mdi-email-outline"></i></span>
-                            </div>
-                            <div class="mb-2 serch-form">
-                                <label class="mb-2" for="userpassword">Password</label>
-                                <input type="password" class="form-control" id="userpassword" placeholder="Enter Password">
-                                <span class="input-group-text"><i class="mdi mdi-lock-outline"></i></span>
-                            </div>
-                            <div class="text-end">
-                                <a href="recoverpw.html" class="text-muted fs-13"><i class="mdi mdi-lock me-1"></i> Forgot password?</a>
-                            </div>
-                            <div class="mt-4">
-                                <button class="btn btn-primary w-100" type="submit">Log in</button>
-                            </div>
-                        </form>
-                        <p class="text-muted pt-3 mb-0">By signing up You agree to our
-                            <a href="javascript:void(0)" class="text-muted"><u>Privacy Policy</u></a> and <a href="" class="text-muted"><u>Terms of Service</u></a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-<!-- end modal -->
-
 <!--START Hero-->
 <section class="section" id="home" style="background-color:#fff !important">
     <div class="container">
         <div class="row align-items-center">
             <div>
-                <img src="<?= base_url('public/images/home.png') ?>" alt="home" style="width: 100%; height: 597px !important; filter: brightness(55%)">
+                <img class="img-home" src="<?= base_url('public/images/home.png') ?>" alt="home">
                 <div class="d-flex">
-                    <div style="position: absolute; bottom: 10px;">
+                    <div class="div-home">
                         <img src="<?= base_url('public/images/text-home.png') ?>" alt="textHome" style="padding-left: 2rem;padding-bottom: 2rem;">
                     </div>
-                    <div style="position: absolute; right: 10px; bottom: 0px; background-color: #fff; height: 7rem; width: 34rem; padding-top: 1.5rem; padding-left: 1.5rem;">
-                        <p style="margin-bottom: -1px; font-size: 19px; color:grey">Web Developer, Mobile Apps, Ui/Ux Design</p>
+                    <div class="div-home2">
+                        <p class="custom-paragraph-home">Web Developer, Mobile Apps, Ui/Ux Design</p>
                         <div class="d-flex" style="gap: 10px;">
                             <img src="<?= base_url('public/images/mouse.png') ?>" alt="img" width="16" height="22">
-                            <p style="color: #293C93; font-size: 17px;">Scroll to read more</p>
+                            <p class="custom-readmore">Scroll to read more</p>
                         </div>
                     </div>
                 </div>
@@ -147,73 +118,81 @@
 <!--END HOME-->
 
 <!-- Our service -->
-<section class="section" id="home">
+<section class="section" id="service">
     <div class="container">
         <div class="row">
-            <h1 style="position: absolute; transform: rotate(-90deg); left: 35rem; top: -10rem; font-size: 100px; color:#293C93">Our Services</h1>
-            <div class="col-6" style="top: -87px;left: 3rem;">
-                <h3 style="font-weight: bold; font-size: 40px;">We Create <br> Digital Products <br> as Your Solution</h3>
+            <h1 class="text-rotate-service">Our Services</h1>
+            <div class="col-6 div-custom-web">
+                <h3 class="text-head-service">We Create <br> Digital Products <br> as Your Solution</h3>
                 <div>
-                    <div class="d-flex" style="gap: 20px; margin-top: 2rem; margin-left: 4rem;">
-                        <img src="<?= base_url('public/images/bulet.png') ?>" alt="bulet">
-                        <img src="<?= base_url('public/images/kotak.png') ?>" alt="kotak">
-                        <img src="<?= base_url('public/images/web.png') ?>" alt="web" style="position: absolute; top: 12.5rem;left: 5.5rem;">
+                    <div class="d-flex div-item-img">
+                        <img src="<?= base_url('public/images/bulet.png') ?>" alt="items-bulet">
+                        <img src="<?= base_url('public/images/kotak.png') ?>" alt="items-kotak">
+                        <img class="img-web" src="<?= base_url('public/images/web.png') ?>" alt="web">
                     </div>
-                    <h3 style="margin-left: 4.5rem">Pengembang Situs Web</h3>
-                    <p style="color: grey; text-align: left; max-width: 32rem;">Website adalah langkah penting dalam menghadapi era digital yang semakin maju,
-                        memungkinkan individu dan organisasi untuk menjangkau audiens global dan beradaptasi
-                        dengan perubahan tren teknologi yang terus berkembang, untuk itu kami hadir untuk memenuhi
-                        kebutuhan tersebut. Kami berkomitment bekerja optimal demi memberikan yang terbaik untuk kepuasan
-                        klien.</p>
-                    <a href="#" style="color: #293C93; font-size: 14px; font-weight: 600;">READ MORE</a>
+                    <div class="div-web">
+                        <h3 class="text-title-web">Pengembang Situs Web</h3>
+                        <p class="paragraph-service">Website adalah langkah penting dalam menghadapi era digital yang semakin maju,
+                            memungkinkan individu dan organisasi untuk menjangkau audiens global dan beradaptasi
+                            dengan perubahan tren teknologi yang terus berkembang, untuk itu kami hadir untuk memenuhi
+                            kebutuhan tersebut. Kami berkomitment bekerja optimal demi memberikan yang terbaik untuk kepuasan
+                            klien.</p>
+                        <a href="#" class="text-readmore">READ MORE</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-6" style="top: -120px;left: 1rem;">
+            <div class="col-6 div-params-content-mobile">
                 <div>
-                    <div class="d-flex" style="gap: 20px; margin-top: 2rem; margin-left: 4rem;">
+                    <div class="d-flex div-item-img">
                         <img src="<?= base_url('public/images/bulet.png') ?>" alt="bulet">
                         <img src="<?= base_url('public/images/kotak.png') ?>" alt="kotak">
                         <img src="<?= base_url('public/images/mobile.png') ?>" alt="web" style="position: absolute;top: 1.5rem;left: 6rem;">
                     </div>
-                    <h3 style="margin-left: 3.5rem">Mobile Apps Development</h3>
-                    <p style="color: grey; text-align: left; max-width: 30rem;">Langit Digital 78 adalah Developer
-                        Aplikasi yang telah berpengalaman dalam berbagai pembuatan aplikasi dimana kami telah banyak
-                        menghasilkan Mobile Apps yang berkualitas internasional tentunya kami juga telah menyesuaikan
-                        dengan kebutuhan dari klien yang kami kemas dengan kreativitas dari Team Langit Digital 78 yang
-                        profesional sehingga menghasilkan sebuah aplikasi yang terbaik secara fungsional dan tampilan yang
-                        memukau. Aplikasi yang kami buat hadir di Playstore dan Apps Store.</p>
-                    <a href="#" style="color: #293C93; font-size: 14px; font-weight: 600;">READ MORE</a>
+                    <div class="div-mobile">
+                        <h3 class="text-title-mobile">Mobile Apps Development</h3>
+                        <p class="paragraph-service">Langit Digital 78 adalah Developer
+                            Aplikasi yang telah berpengalaman dalam berbagai pembuatan aplikasi dimana kami telah banyak
+                            menghasilkan Mobile Apps yang berkualitas internasional tentunya kami juga telah menyesuaikan
+                            dengan kebutuhan dari klien yang kami kemas dengan kreativitas dari Team Langit Digital 78 yang
+                            profesional sehingga menghasilkan sebuah aplikasi yang terbaik secara fungsional dan tampilan yang
+                            memukau. Aplikasi yang kami buat hadir di Playstore dan Apps Store.</p>
+                        <a href="#" class="text-readmore">READ MORE</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-6" style="top: -50px;left: 3rem;">
+            <div class="col-6 div-params-content-cms">
                 <div>
-                    <div class="d-flex" style="gap: 20px; margin-top: 2rem; margin-left: 4rem;">
+                    <div class="d-flex div-item-img">
                         <img src="<?= base_url('public/images/bulet.png') ?>" alt="bulet">
                         <img src="<?= base_url('public/images/kotak.png') ?>" alt="kotak">
                         <img src="<?= base_url('public/images/pc.png') ?>" alt="web" style="position: absolute;top: 1.5rem;left: 4.4rem;">
                     </div>
-                    <h3 style="margin-left: 2.5rem">Content Management System</h3>
-                    <p style="color: grey; text-align: left; max-width: 32rem;">CMS memungkinkan untuk pengguna mengelola,
-                        membuat, dan mengubah konten digital di situs web, pengguna dapat lebih mudah mengelola konten tanpa
-                        memerlukan keterampilan teknis yang mendalam, sehingga mempermudah proses pengembangan dan pemeliharaan
-                        situs web.</p>
-                    <a href="#" style="color: #293C93; font-size: 14px; font-weight: 600;">READ MORE</a>
+                    <div class="div-cms">
+                        <h3 class="text-cms">Content Management System</h3>
+                        <p class="paragraph-service">CMS memungkinkan untuk pengguna mengelola,
+                            membuat, dan mengubah konten digital di situs web, pengguna dapat lebih mudah mengelola konten tanpa
+                            memerlukan keterampilan teknis yang mendalam, sehingga mempermudah proses pengembangan dan pemeliharaan
+                            situs web.</p>
+                        <a href="<?= base_url("/cms") ?>" class="text-readmore">READ MORE</a>
+                    </div>
                 </div>
             </div>
-            <div class="col-6" style="top: -130px;left: 1rem;">
+            <div class="col-6 div-params-content-uiux">
                 <div>
-                    <div class="d-flex" style="gap: 20px; margin-top: 0rem; margin-left: 4rem;">
+                    <div class="d-flex div-item-img">
                         <img src="<?= base_url('public/images/bulet.png') ?>" alt="bulet">
                         <img src="<?= base_url('public/images/kotak.png') ?>" alt="kotak">
                         <img src="<?= base_url('public/images/uiux.png') ?>" alt="web" style="position: absolute;top: 2rem;left: 6rem;">
                     </div>
-                    <h3 style="margin-left: 7.5rem">Ui / Ux Design</h3>
-                    <p style="color: grey; text-align: left; max-width: 32rem;">Aplikasi tentunya membutuhkan tampilan UI yang menarik
-                        sehingga membuat user memiliki ketertarikan berkat tampilan yang memanjakan mata, proses desain tentunya memiliki
-                        perhitungan yang matang, kami juga memperhatikan UX yang user friendly sehingga perasaan dan pengalaman keseluruhan
-                        pengguna saat menggunakan aplikasi. Keduanya bekerja bersama untuk menciptakan produk yang tidak hanya menarik secara
-                        visual, tetapi juga mudah digunakan dan menyenangkan.</p>
-                    <a href="#" style="color: #293C93; font-size: 14px; font-weight: 600;">READ MORE</a>
+                    <div class="div-uiux">
+                        <h3 class="text-uiux">Ui / Ux Design</h3>
+                        <p class="paragraph-service">Aplikasi tentunya membutuhkan tampilan UI yang menarik
+                            sehingga membuat user memiliki ketertarikan berkat tampilan yang memanjakan mata, proses desain tentunya memiliki
+                            perhitungan yang matang, kami juga memperhatikan UX yang user friendly sehingga perasaan dan pengalaman keseluruhan
+                            pengguna saat menggunakan aplikasi. Keduanya bekerja bersama untuk menciptakan produk yang tidak hanya menarik secara
+                            visual, tetapi juga mudah digunakan dan menyenangkan.</p>
+                        <a href="#" class="text-readmore">READ MORE</a>
+                    </div>
                 </div>
             </div>
 
@@ -223,10 +202,10 @@
 <!--END HOME-->
 
 <!-- Our works -->
-<section class="section" id="home">
+<section class="section" id="portofolio">
     <div class="container">
         <div class="row">
-            <h1 style="position: absolute; transform: rotate(-90deg); right: 36.5rem; top: -10rem; font-size: 100px; color:#293C93">Our Works</h1>
+            <h1 class="text-rotation-ourwork">Our Works</h1>
             <div class="col-6" style="top: -11rem;left: 3rem;">
                 <div>
                     <div class="image-container" style="margin-top: 2rem; margin-bottom: 1rem; margin-right: 9rem;">
@@ -299,12 +278,12 @@
 <!--END HOME-->
 
 <!-- Our Happy Clients -->
-<section class="section" id="home">
+<section class="section" id="aboutUs">
     <div class="container">
         <div class="row">
-            <div class="col-12" style="top: -250px; left: 3.5rem;">
+            <div class="col-12 div-params-ourClients">
                 <h2 style="font-size: 40px">What Our Clients <br> Say About Us</h2>
-                <img src="<?= base_url('public/images/squer.png') ?>" alt="kotak" style="top: 6rem; right: 11rem; position:absolute">
+                <img class="img-items" src="<?= base_url('public/images/squer.png') ?>" alt="items-kotak">
             </div>
 
             <!-- Swiper Container -->
@@ -374,6 +353,50 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="stars" style="margin-left: -19rem;">⭐⭐⭐⭐⭐</p>
+                                <p style="text-align: justify;">Kami merasa senang dan puas dengan
+                                    pelayanan yang telah di berikan oleh Langit Digitial 78 dengan tim
+                                    yang berkerja dengan passion mereka, semua berjalan baik dan sesuai
+                                    dengan jadwal yang telah di tentukan. Saat ini aplikasi masih kami
+                                    pergunakan dan semua senang karena dapat memenuhi kebutuhan dari club.
+                                    Mungkin kami akan bekerja sama kembali dengan project yang berbeda.</p>
+                                <div class="client-info">
+                                    <img src="<?= base_url('public/images/org.png') ?>" alt="client" class="client-photo">
+                                    <div style="text-align: left;">
+                                        <h6>Ipul</h6>
+                                        <p>Founder SKYE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="stars" style="margin-left: -19rem;">⭐⭐⭐⭐⭐</p>
+                                <p style="text-align: justify;">Kami merasa senang dan puas dengan
+                                    pelayanan yang telah di berikan oleh Langit Digitial 78 dengan tim
+                                    yang berkerja dengan passion mereka, semua berjalan baik dan sesuai
+                                    dengan jadwal yang telah di tentukan. Saat ini aplikasi masih kami
+                                    pergunakan dan semua senang karena dapat memenuhi kebutuhan dari club.
+                                    Mungkin kami akan bekerja sama kembali dengan project yang berbeda.</p>
+                                <div class="client-info">
+                                    <img src="<?= base_url('public/images/org.png') ?>" alt="client" class="client-photo">
+                                    <div style="text-align: left;">
+                                        <h6>upin</h6>
+                                        <p>Founder SKYE</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Pagination -->
@@ -388,70 +411,70 @@
 <section class="section" id="home" style="margin-top: -16rem;">
     <div class="container">
         <div class="row">
-            <h1 style="position: absolute; transform: rotate(-90deg); left: 35rem; top: -29rem; font-size: 100px; color:#293C93">Testimonials</h1>
-            <h2 style="text-align: center; font-size: 40px">Our Happy Clients</h2>
-            <div style=" display: flex; padding: 0 3rem; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem;">
-                <div style="width: 118px; height: 119px; display: flex; align-items: center;">
+            <h1 class="text-rotation-testimonial">Testimonials</h1>
+            <h2 class="text-happy-client">Our Happy Clients</h2>
+            <div class="div-params-index1">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/AMULET.svg') ?>" alt="logo">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/CEK-PINJOL.svg') ?>" alt="logo">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/FASI.svg') ?>" alt="logo">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/FSPMI.svg') ?>" alt="logo" style="width: 117px; height: 119px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/LOGO-TOKOBONA.svg') ?>" alt="logo" style="width: 117px; height: 32px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/LOGO-IKAL(1).svg') ?>" alt="logo" style="width: 82px; height: 82px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/LOGO-SALAM-LESTARI.svg') ?>" alt="logo" style="width: 131px; height: 131px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/HOG.svg') ?>" alt="logo" style="width: 118px; height: 117px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/KOSGORO.svg') ?>" alt="logo" style="width: 119px; height: 117px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/MERCEDES.svg') ?>" alt="logo" style="width: 119px; height: 117px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/MINI-COOPER.svg') ?>" alt="logo" style="width: 117px; height: 117px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/LINGKUNGANKU.svg') ?>" alt="logo" style="width: 104px; height: 41px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/LOGO-MHS-CMS.svg') ?>" alt="logo" style="width: 65px; height: 62px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/PEPABRI-LOGO.svg') ?>" alt="logo" style="width: 75px; height: 75px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/PPI-DUNIA.svg') ?>" alt="logo" style="width: 118px; height: 120px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/SAHABAT-DISABILITAS.svg') ?>" alt="logo" style="width: 119px; height: 120px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/SAKA.svg') ?>" alt="logo" style="width: 119px; height: 120px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/STARLET.svg') ?>" alt="logo" style="width: 118px; height: 119px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/LOGO-HTCI.svg') ?>" alt="logo" style="width: 95px; height: 44px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/LOGO-KOPERASI-YAMAHA-PNG.svg') ?>" alt="logo" style="width: 77px; height: 76px;">
                 </div>
-                <div style="width: 118px; height: 119px; display: flex; align-items: center; justify-content: center;">
+                <div class="div-logo-index1">
                     <img src="<?= base_url('public/images/MUSLIMAPP-LOGO.svg') ?>" alt="logo" style="width: 93px; height: 56px;">
                 </div>
             </div>
@@ -462,8 +485,8 @@
 <!--END HOME-->
 
 <!-- START FOOTER -->
-<footer class="section footer" style="background-image: url('public/images/jakarta.png'); height: 647px; background-repeat: no-repeat; background-size: cover; background-position: center; filter: brightness(87%)">
-    <div class="container" style="position: absolute; bottom: -24px; left: -20px; padding: 20px;">
+<footer class="section footer footer-custom-index1">
+    <div class="container div-custom-container">
         <div class="row">
             <div class="d-flex align-content-center" style="gap: 30px;">
                 <img src="<?= base_url('public/images/JAKARTA2.png') ?>" alt="jakarta" style="left: 0; bottom: 0;">
@@ -494,13 +517,25 @@
 <script>
     var swiper = new Swiper('.mySwiper', {
         loop: true, // Slider loop
+        // slidesPerView: 2,
+        // spaceBetween: 20, 
         pagination: {
             el: '.swiper-pagination',
             clickable: true, // Membuat pagination interaktif
         },
-        autoplay: {
-            delay: 5000, // Otomatis geser tiap 5 detik
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 5000, // Otomatis geser tiap 5 detik
+        //     disableOnInteraction: false,
+        // },
+        // breakpoints: {
+        //     640: {
+        //         slidesPerView: 1,
+        //         spaceBetween: 10,
+        //     },
+        //     1024: {
+        //         slidesPerView: 2,
+        //         spaceBetween: 10,
+        //     },
+        // },
     });
 </script>

@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-white navbar-custom sticky" id="navbar">
     <div class="container">
         <!-- LOGO -->
-        <a class="navbar-brand text-uppercase" href="index-1.html">
+        <a class="navbar-brand text-uppercase" href="<?= base_url("/") ?>">
             <img class="logo-light" src="<?= base_url('public/assets/images/logo-langit.png') ?>" alt="" height="40">
             <img class="logo-dark" src="<?= base_url('public/assets/images/logo-langit.png') ?>" alt="" height="40">
         </a>
@@ -15,22 +15,22 @@
         <div class="collapse navbar-collapse customNav" id="navbarCollapse">
             <ul class="navbar-nav" id="navbar-navlist">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#home">Beranda</a>
+                    <a class="nav-link <?= (rtrim(current_url(), '/') === rtrim(base_url("/"), '/')) ? 'active' : '' ?>" href="<?= base_url("/") ?>">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#features">Tentang Kami</a>
+                    <a class="nav-link <?= (current_url() == base_url("/tentangKami")) ? 'active' : '' ?>" href="<?= base_url("/tentangKami") ?>">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#review">Layanan</a>
+                    <a class="nav-link" href="#service">Layanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#team">Portfolio</a>
+                    <a class="nav-link" href="#portofolio">Portfolio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link mb-3 mb-lg-0" href="#contact">Kontak</a>
                 </li>
             </ul>
         </div>
-    </div><!-- End container -->
+    </div>
 </nav>
 <!-- End Navbar -->
