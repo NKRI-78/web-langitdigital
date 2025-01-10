@@ -1,0 +1,137 @@
+#hero {
+  padding-top: 6.5rem;
+}
+
+#hero .left-side {
+  padding-left: 2rem;
+}
+
+.hero-title {
+  padding-right: 36rem;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  color: #293c93;
+}
+
+#hero .right-side {
+  position: relative;
+  height: 35rem;
+}
+
+.right-side .back-img-hero {
+  position: absolute;
+  top: 0;
+  right: -73px;
+  height: 32rem;
+  column-gap: 6rem;
+}
+
+.back-img-hero .left-img {
+  height: 8rem;
+}
+
+.back-img-hero .right-img {
+  width: 28rem;
+  height: 100%;
+}
+
+#hero .right-side > img {
+  position: absolute;
+  top: 0;
+  right: -73px;
+  width: 38rem;
+}
+
+#features {
+  padding: 0 8rem;
+}
+
+#features > div > .left-side {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+#features > div > .right-side {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.feature-card > .header {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.feature-card p.content {
+  color: rgba(0, 0, 0, 0.42);
+}
+
+.feature-card > .header > img {
+  width: 3rem;
+}
+
+.feature-card > .header > h6 {
+  font-size: 1.25rem;
+}
+
+.side-title {
+  position: absolute;
+  right: -145px;
+  top: 60px;
+  transform: rotate(-90deg);
+  color: #293c93;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.btn-contact-us {
+  background-color: #293c93;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+}
+
+#ourWorks {
+  margin-top: 4rem;
+  margin-bottom: 8rem;
+}
+
+#ourWorks .content-wrapper {
+  padding: 0 2rem;
+}
+
+#ourWorks .content-wrapper > div > h5 {
+  width: 18rem;
+}
+
+#ourWorks .content-wrapper .image-container {
+  width: 26rem;
+}
+
+#ourWorks .content-wrapper .image-container > img {
+  width: 100%;
+}
+
+.image-container .hover-image {
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+
+/* Tampilkan gambar hover ketika di-hover */
+.image-container:hover .img-mini {
+  display: none;
+  position: relative;
+  z-index: 3;
+}
+
+.image-container:hover .hover-image {
+  display: block;
+  position: relative;
+  z-index: 3;
+}

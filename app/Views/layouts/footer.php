@@ -4,7 +4,7 @@
             <div class=" row">
          <div class="col-lg-12">
              <div>
-                 <h2 class="text-center" style="font-size: 66px; font-weight: 400;">Let's Work Together!</h2>
+                 <h2 class="text-center mb-4" style="font-size: 66px; font-weight: 400;">Let's Work Together!</h2>
                  <div class="d-flex justify-content-center" style="gap: 45px">
                      <div class="d-flex align-content-center" style="gap: 12px">
                          <img src="<?= base_url('public/images/WhatsApp.png') ?>" alt="wa" width="45" height="45">
