@@ -246,8 +246,8 @@ Indonesia
    var swiper = new Swiper('.swiper', {
     slidesPerView: 4,
     spaceBetween: 2,
-    autoplay: {
-        // delay: 5000
-    }
+    // autoplay: {
+    //     delay: 5000
+    // }
     });
 </script>
