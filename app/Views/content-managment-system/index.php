@@ -99,23 +99,23 @@
         <div class="swiper-wrapper container text-center">
             <!-- Slide 1 -->
             <div class="swiper-slide custom-swiper-slide-cms">
-                <img class="item-slide" src=<?= base_url('public/images/cms-mhs.png') ?> alt="cms mhs">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-mhs.png') ?> alt="cms mhs">
                 <h6>Metro Hotelschool</h6>
             </div>
             <div class="swiper-slide custom-swiper-slide-cms">
-                <img class="item-slide" src=<?= base_url('public/images/cms-atj.png') ?> alt="cms atj">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-atj.png') ?> alt="cms atj">
                 <h6>Asosiasi Tiger Jakarta</h6>
             </div>
             <div class="swiper-slide custom-swiper-slide-cms">
-                <img class="item-slide" src=<?= base_url('public/images/cms-4medan.png') ?> alt="cms 4 medan">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-4medan.png') ?> alt="cms 4 medan">
                 <h6>SMA 4 Medan</h6>
             </div>
             <div class="swiper-slide custom-swiper-slide-cms">
-                <img class="item-slide" src=<?= base_url('public/images/cms-fspmi.png') ?> alt="cms fspmi">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-fspmi.png') ?> alt="cms fspmi">
                 <h6>FSPMI</h6>
             </div>
             <div class="swiper-slide custom-swiper-slide-cms">
-                <img class="item-slide" src=<?= base_url('public/images/cms-hp3ki.png') ?> alt="cms hp3ki">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-hp3ki.png') ?> alt="cms hp3ki">
                 <h6>HP3KI</h6>
             </div>
         </div>
@@ -162,11 +162,11 @@
 <?= view('layouts/footer'); ?>
 <?= view('layouts/script'); ?>
 <script>
-   var swiper = new Swiper('.swiper', {
-    slidesPerView: 4,
-    spaceBetween: 2,
-    autoplay: {
+    var swiper = new Swiper('.swiper', {
+        slidesPerView: 2,
+        spaceBetween: 5,
+        // autoplay: {
         // delay: 5000
-    }
+        // }
     });
 </script>
