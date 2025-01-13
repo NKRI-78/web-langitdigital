@@ -1,5 +1,5 @@
 <?= view('layouts/header'); ?>
-<?= view('layouts/navBar'); ?>
+<?= view('layouts/navbar'); ?>
 
 <!--START Hero-->
 <section class="section" id="home" style="background-color:#fff !important">
@@ -169,7 +169,7 @@
                             tetapi juga etis dan dapat dipercaya.</p>
                     </div>
                     <div class="container-value" style="margin-top: -10rem;">
-                        <img src="<?= base_url('public/images/icon-heart.svg') ?>" alt="kotak">
+                        <img src="<?= base_url('public/images/icon-Heart.svg') ?>" alt="kotak">
                         <h3 class="text-title-icon">Be Good Family, <br> Be Good Human</h3>
                         <p class="paragraph-value">Di dunia teknologi yang terus berkembang,
                             perusahaan IT yang sukses tidak hanya melihat karyawan dan pelanggan

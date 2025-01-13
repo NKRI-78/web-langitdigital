@@ -26,7 +26,6 @@
         </div>
     </div>
 </footer>
-
 <script>
     function copyToClipboard(text) {
         // Create a temporary input element

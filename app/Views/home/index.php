@@ -1,5 +1,5 @@
 <?= view('layouts/header'); ?>
-<?= view('layouts/navBar'); ?>
+<?= view('layouts/navbar'); ?>
 
 <style>
     /* css slider */
@@ -480,7 +480,7 @@
 <script>
     var swiper = new Swiper('.mySwiper', {
         loop: true, // Slider loop
-        slidesPerView: 1,
+        slidesPerView: 2,
         // spaceBetween: 20, 
         pagination: {
             el: '.swiper-pagination',
