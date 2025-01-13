@@ -1,39 +1,31 @@
-<!-- FOOTER-ALT -->
- <div class="footer-alt pt-5 pb-5" id="contact" style="background-color: #293C93; color:#fff">
-     <div class="container"">
-            <div class=" row">
-         <div class="col-lg-12">
-             <div>
-                 <h2 class="text-center mb-4" style="font-size: 66px; font-weight: 400;">Let's Work Together!</h2>
-                 <div class="d-flex justify-content-center" style="gap: 45px">
-                     <div class="d-flex align-content-center" style="gap: 12px">
-                         <img src="<?= base_url('public/images/WhatsApp.png') ?>" alt="wa" width="45" height="45">
-                         <div class="text-left">
-                             <p style="margin-bottom: -1px;">WHATSAPP US NOW</p>
-                             <a href="https://wa.me/6282125267210" target="_blank" rel="noopener noreferrer" style="font-weight: 800; color: #fff">0821-2526-7210</a>
-                         </div>
-                     </div>
-                     <div class="d-flex align-content-center" style="gap: 12px">
-                         <img src="<?= base_url('public/images/iphone.png') ?>" alt="wa" width="45" height="45">
-                         <div class="text-left">
-                             <p style="margin-bottom: -1px;">CALL US TODAY</p>
-                             <a href="javascript:void(0)" onclick="copyToClipboard('021-27842125')" style="font-weight: 800; color: #fff">021-27842125</a>
-                         </div>
-                     </div>
-                     <div class="d-flex align-content-center" style="gap: 12px">
-                         <img src="<?= base_url('public/images/Email.png') ?>" alt="wa" width="45" height="45">
-                         <div class="text-left">
-                             <p style="margin-bottom: -1px;">EMAIL US ANYTIME</p>
-                             <p style="font-weight: 800;">langitdigital78@gmail.com</p>
-                         </div>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </div>
- </div>
- </div>
- <!-- END FOOTER-ALT -->
+<footer id="contact" class="container-footer p-5">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 class="text-center mb-4 title-footer">Let's Work Together!</h3>
+        <div class="d-lg-flex d-sm-flex justify-content-center gap-lg-5">
+            <div class="d-flex align-content-center gap-3 mb-sm-3 custom-div-footer">
+                <img src="<?= base_url('public/images/WhatsApp.png') ?>" alt="wa" width="45" height="45">
+                <div class="text-left">
+                    <p style="margin-bottom: -1px;">WHATSAPP US NOW</p>
+                    <a href="https://wa.me/6282125267210" class="text-footer" target="_blank" rel="noopener noreferrer">0821-2526-7210</a>
+                </div>
+            </div>
+            <div class="d-flex align-content-center gap-3 custom-div-footer">
+                <img src="<?= base_url('public/images/iPhone.png') ?>" alt="wa" width="45" height="45">
+                <div class="text-left">
+                    <p style="margin-bottom: -1px;">CALL US TODAY</p>
+                    <a href="javascript:void(0)" class="text-footer" onclick="copyToClipboard('021-27842125')">021-27842125</a>
+                </div>
+            </div>
+            <div class="d-flex align-content-center gap-3 custom-div-footer">
+                <img src="<?= base_url('public/images/Email.png') ?>" alt="wa" width="45" height="45">
+                <div class="text-left">
+                    <p style="margin-bottom: -1px;">EMAIL US ANYTIME</p>
+                    <a href="javascript:void(0)" class="text-footer" onclick="copyToClipboard('langitdigital78@gmail.com')">langitdigital78@gmail.com</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script>
     function copyToClipboard(text) {
