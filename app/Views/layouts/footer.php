@@ -14,7 +14,7 @@
                          </div>
                      </div>
                      <div class="d-flex align-content-center" style="gap: 12px">
-                         <img src="<?= base_url('public/images/iphone.png') ?>" alt="wa" width="45" height="45">
+                         <img src="<?= base_url('public/images/iPhone.png') ?>" alt="wa" width="45" height="45">
                          <div class="text-left">
                              <p style="margin-bottom: -1px;">CALL US TODAY</p>
                              <a href="javascript:void(0)" onclick="copyToClipboard('021-27842125')" style="font-weight: 800; color: #fff">021-27842125</a>
