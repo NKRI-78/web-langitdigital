@@ -9,7 +9,7 @@
     <meta name="keywords" content="bootstrap v5.3.2, premium, marketing, multipurpose" />
     <meta content="Themesdesign" name="author" />
 
-    <link rel="shortcut icon" href="<?= base_url('public/assets/images/logo-langit.png') ?>" />
+    <link rel="shortcut icon" href="<?= base_url('public/images/LOGO-LD.png') ?>" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

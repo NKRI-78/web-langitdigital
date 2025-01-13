@@ -2,8 +2,8 @@
     <div class="container">
         <!-- LOGO -->
         <a class="navbar-brand text-uppercase" href="<?= base_url("/") ?>">
-            <img class="logo-light" src="<?= base_url('public/assets/images/logo-langit.png') ?>" alt="" height="40">
-            <img class="logo-dark" src="<?= base_url('public/assets/images/logo-langit.png') ?>" alt="" height="40">
+            <img class="logo-light" src="<?= base_url('public/images/LOGO-LD.png') ?>" alt="" height="75">
+            <img class="logo-dark" src="<?= base_url('public/images/LOGO-LD.png') ?>" alt="" height="75">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
