@@ -1,5 +1,5 @@
 <?= view('layouts/header'); ?>
-<?= view('layouts/navBar'); ?>
+<?= view('layouts/navbar'); ?>
 
 <!--START Hero-->
 <section class="section" id="home" style="background-color:#fff !important">
