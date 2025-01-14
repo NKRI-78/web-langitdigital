@@ -170,7 +170,7 @@
                 kami juga memperhatikan UX yang user friendly sehingga perasaan dan pengalaman
                 keseluruhan pengguna saat menggunakan aplikasi. Keduanya bekerja bersama untuk
                 menciptakan produk yang tidak hanya menarik secara visual, tetapi juga mudah digunakan dan menyenangkan.</p>
-            <a href="<?= base_url("#") ?>" class="text-read-more">READ MORE</a>
+            <a href="<?= base_url("/ui-ux") ?>" class="text-read-more">READ MORE</a>
         </div>
     </div>
 </section>

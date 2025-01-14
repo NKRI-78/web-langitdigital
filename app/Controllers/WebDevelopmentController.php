@@ -11,7 +11,11 @@ class WebDevelopmentController extends BaseController
     public function index()
     {
         // return view("errors/html/maintenance");
-        return view("web-development/index.php");
+        $data = [
+            'css_file' => 'public/css/custom/web.css',
+        ];
+
+        return view("web-development/index.php", $data);
     }
 
     // public function store()
