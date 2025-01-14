@@ -77,7 +77,7 @@
 
         .custom-swiper-slide-home {
             width: 34rem !important;
-            margin-right: -143px;
+            /* margin-right: -143px; */
         }
 
         #customSwiper {
@@ -385,11 +385,8 @@
     <div class="div-param-location">
         <h3 class="text-jakarta">JAKARTA</h3>
         <div class="div-address">
-            <h5 class="font-weight-bold">PT NARA KAHAM RAYA INVESTAMA</h5>
-            <p class="text-address">JL. Kemang Selatan, GG Bambu Kuning No.3B, Desa
-                Kelurahan Cilandak Timur, Kec.
-                Pasar Minggu, Kota Adm. Jakarta Selatan, Provinsi
-                DKI Jakarta, 12560</p>
+            <h5 class="font-weight-bold">PT LANGIT DIGITAL TUJUH DELAPAN</h5>
+            <p class="text-address">Jl. Kemang Selatan IX No.9A, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730</p>
         </div>
     </div>
 </section>
@@ -413,11 +410,11 @@
             // Ketika lebar layar lebih kecil dari 426px
             0: { // Untuk mobile
                 slidesPerView: 1,
-                spaceBetween: 1,
+                spaceBetween: 10,
             },
             768: { // Untuk tablet/desktop
                 slidesPerView: 2,
-                spaceBetween: 20,
+                spaceBetween: 10,
             },
         },
     });

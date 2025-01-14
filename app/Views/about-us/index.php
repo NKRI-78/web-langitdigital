@@ -178,11 +178,8 @@
     <div class="div-param-location-section6">
         <h3 class="text-jakarta-section6">JAKARTA</h3>
         <div class="div-address-section6">
-            <h5 class="font-weight-bold">PT NARA KAHAM RAYA INVESTAMA</h5>
-            <p class="text-address-section6">JL. Kemang Selatan, GG Bambu Kuning No.3B, Desa
-                Kelurahan Cilandak Timur, Kec.
-                Pasar Minggu, Kota Adm. Jakarta Selatan, Provinsi
-                DKI Jakarta, 12560</p>
+            <h5 class="font-weight-bold">PT LANGIT DIGITAL TUJUH DELAPAN</h5>
+            <p class="text-address-section6">Jl. Kemang Selatan IX No.9A, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730</p>
         </div>
     </div>
 </section>
