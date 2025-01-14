@@ -18,8 +18,10 @@
     <!-- fevicon -->
     <link rel="shortcut icon" href="images/favicon.ico">
 
-    <link rel="stylesheet" href="<?= base_url('public/css/custom/web.css') ?>">
-    <link rel="stylesheet" href="<?= base_url('public/css/custom/mobile.css') ?>">
+    <!-- Page-specific CSS -->
+    <?php if (!empty($css_file)): ?>
+        <link rel="stylesheet" href="<?= base_url($css_file) ?>">
+    <?php endif; ?>
     <link rel="stylesheet" href="<?= base_url('public/css/custom/global.css') ?>">
 
     <!-- Bootstrap css -->

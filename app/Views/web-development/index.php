@@ -94,7 +94,7 @@ Indonesia
     <h5 class="fs-3">Our Works on
     Website Development</h5>
     </div>
-    <div class="d-flex justify-content-between">
+    <div class="d-flex justify-content-between features-wrapper">
             <div>
                 <div class="image-container" >
                     <img class="img-mini" src="<?= base_url('public/images/voucher.png') ?>" alt="bulet">

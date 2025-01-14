@@ -183,8 +183,7 @@ Indonesia
     <h5 class="fs-3">Our Works on
     Mobile Apps Development</h5>
     </div>
-<div class="d-flex justify-content-between ">
-
+<div class="d-flex justify-content-between features-wrapper">
             <div>
                 <div class="image-container" >
                     <img class="img-mini" src="<?= base_url('public/images/MINI-COOPER-4X.png') ?>" alt="bulet">
@@ -206,7 +205,7 @@ Indonesia
                 </div>
             </div>
     </div>
-    <div class="d-flex justify-content-between content-wrapper">
+    <div class="d-flex justify-content-between content-wrapper features-wrapper">
             <div>
                 <div class="image-container" >
                     <img class="img-mini" src="<?= base_url('public/images/YAMAHA-4x.png') ?>" alt="bulet">
@@ -244,7 +243,7 @@ Indonesia
 <?= view('layouts/script'); ?>
 <script>
    var swiper = new Swiper('.swiper', {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 2,
     // autoplay: {
     //     delay: 5000

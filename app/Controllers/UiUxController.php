@@ -6,16 +6,16 @@ use App\Controllers\Base\BaseController;
 use Config\Services;
 use GuzzleHttp\Client;
 
-class MobileDevelopmentController extends BaseController
+class UiUxController extends BaseController
 {
     public function index()
     {
         // return view("errors/html/maintenance");
         $data = [
-            'css_file' => 'public/css/custom/mobile.css',
+            'css_file' => 'public/css/custom/ui-ux.css',
         ];
 
-        return view("mobile-development/index.php", $data);
+        return view("ui-ux/index.php", $data);
     }
 
     // public function store()
