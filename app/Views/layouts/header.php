@@ -38,8 +38,8 @@
 
     <!-- css -->
     <link rel="stylesheet" href="<?= base_url('public/css/style.min.css') ?>" type="text/css" />
-    <link rel="stylesheet" href="<?= base_url('public/css/style.index-1.css?v='. time()) ?>" type="text/css" />
-    <link rel="stylesheet" href="<?= base_url('public/css/style.index-2.css?v='. time()) ?>" type="text/css" />
+    <link rel="stylesheet" href="<?= base_url('public/css/custom/home.css?v='. time()) ?>" type="text/css" />
+    <link rel="stylesheet" href="<?= base_url('public/css/custom/about-us.css?v='. time()) ?>" type="text/css" />
     <link rel="stylesheet" href="<?= base_url('public/css/style.index-5.css?v='. time()) ?>" type="text/css" />
 
     <!-- custome css -->
