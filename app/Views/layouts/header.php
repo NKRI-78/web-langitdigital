@@ -5,9 +5,9 @@
     <meta charset="utf-8" />
     <title>Langit Digital</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap v5.3.2 Landing Page Template" />
-    <meta name="keywords" content="bootstrap v5.3.2, premium, marketing, multipurpose" />
-    <meta content="Themesdesign" name="author" />
+    <meta name="description" content="Website PT Langit Digital Tujuh Delapan" />
+    <meta name="keywords" content="website, company profile, langit digital tujuh delapan" />
+    <meta content="pt langit digital tujuh delapan" name="author" />
 
     <link rel="shortcut icon" href="<?= base_url('public/images/LOGO-LD.png') ?>" />
 
@@ -22,6 +22,7 @@
     <?php if (!empty($css_file)): ?>
         <link rel="stylesheet" href="<?= base_url($css_file) ?>">
     <?php endif; ?>
+    
     <link rel="stylesheet" href="<?= base_url('public/css/custom/global.css') ?>">
 
     <!-- Bootstrap css -->
@@ -40,9 +41,6 @@
 
     <!-- css -->
     <link rel="stylesheet" href="<?= base_url('public/css/style.min.css') ?>" type="text/css" />
-    <link rel="stylesheet" href="<?= base_url('public/css/custom/home.css?v='. time()) ?>" type="text/css" />
-    <link rel="stylesheet" href="<?= base_url('public/css/custom/about-us.css?v='. time()) ?>" type="text/css" />
-    <link rel="stylesheet" href="<?= base_url('public/css/custom/cms.css?v='. time()) ?>" type="text/css" />
 
     <!-- custome css -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
