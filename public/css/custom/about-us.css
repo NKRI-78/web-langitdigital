@@ -1,0 +1,328 @@
+.customNav {
+  flex-grow: 0 !important;
+}
+
+.text-sectionAbout {
+  font-size: 22px;
+  color: grey;
+  line-height: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.item-squer-bottom2 {
+  position: absolute;
+  right: 5.5rem;
+  bottom: -1rem;
+}
+
+.img-weare {
+  z-index: 2;
+}
+
+/* text rotation */
+.text-rotation {
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -36rem;
+  top: -4rem;
+  font-size: 100px;
+  color: #293c93;
+  cursor: default;
+}
+
+.text-rotation-vision {
+  position: absolute;
+  transform: rotate(-90deg);
+  right: -35rem;
+  top: 12rem;
+  font-size: 100px;
+  color: #293c93;
+  cursor: default;
+}
+
+.text-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #293c93;
+  font-family: "Gilroy-Bold", sans-serif;
+  text-align: center;
+}
+
+.text-sectionVision {
+  font-size: 41px;
+  line-height: 44px;
+  font-weight: 800;
+  font-family: "Gilroy-Bold", sans-serif;
+}
+
+/* .parent-div-text-vision {
+  justify-items: center;
+} */
+
+.footer-custom {
+  background-image: url("../images/jakarta.png"), url("../images/office.svg");
+  background-size: 50% 100%, auto 100%;
+  height: 647px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  filter: brightness(87%);
+}
+
+.footer-container {
+  position: absolute;
+  bottom: -24px;
+  left: -20px;
+  padding: 20px;
+}
+
+/* css code new */
+.custom-section1 {
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+}
+
+.item-squer-left {
+  transform: rotate(90deg);
+  position: absolute;
+  left: -7.5rem;
+  bottom: 11rem;
+}
+
+.item-squer-bottom {
+  position: absolute;
+  bottom: -43px;
+  right: -36px;
+}
+
+.text-title-aboutus {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 78px;
+  margin-left: 19px;
+}
+
+.img-about {
+  margin-bottom: 11px;
+  z-index: 2;
+  /* width: 595px; */
+}
+
+.paragraph-center {
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 28px;
+  color: grey;
+  text-align: center;
+}
+
+.paragraph-section2 {
+  color: grey;
+}
+
+.text-section2 {
+  text-align: end;
+}
+
+.param-section {
+  padding: 0px 126px;
+}
+
+.title-section3 {
+  color: #283a8f;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.paragraph-section3 {
+  font-size: 29px;
+  line-height: 44px;
+  font-weight: 600;
+}
+
+.custom-hr {
+  width: 883px;
+  border: 1.5px solid;
+}
+
+.text-vision {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.params-value-section3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 3rem;
+  margin-top: 3rem;
+  padding: 0px 134px 0px 136px;
+}
+
+.paragraph-value {
+  max-width: 250px;
+  color: grey;
+}
+
+.text-title-icon {
+  color: #293c93;
+  font-size: 21px;
+  font-weight: bold;
+  padding: 5px 0px;
+}
+
+.custom-value {
+  margin-top: -10rem;
+}
+
+.param-section5 {
+  padding: 0px 134px;
+}
+
+.paragraph-section5 {
+  max-width: 100%;
+  color:grey;
+}
+
+.param-child-section5 {
+  margin-top: 16rem;
+}
+
+.custom-container-location-section6 {
+  background-image: url("../../images/jakarta.png"), url("../../images/office.svg");
+  background-size: 50% 100%, cover;
+  height: 647px;
+  background-repeat: no-repeat, no-repeat;
+  background-position: left, right;
+  filter: brightness(87%);
+}
+
+.div-param-location-section6 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  position: fixed;
+  padding-top: 31rem;
+}
+
+.text-jakarta-section6 {
+  color: #fff;
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.div-address-section6 {
+  color: #fff;
+  font-size: 17.97px;
+}
+
+.text-address-section6 {
+  max-width: 100%;
+}
+
+@media (max-width: 426px) {
+  /* css code new */
+  .text-title-aboutus {
+    font-size: 28px;
+    margin-top: -7px;
+    margin-left: 13px;
+  }
+
+  .img-about {
+    position: relative;
+  }
+
+  .item-squer-left {
+    left: -3.5rem;
+    bottom: 17rem;
+  }
+
+  .item-squer-bottom {
+    bottom: -22px;
+    right: 0px;
+  }
+
+  .paragraph-center {
+    text-align: left;
+  }
+
+  .div-text-right {
+    display: flex;
+    display: -ms-flex;
+    flex-direction: column;
+  }
+
+  .text-section2 {
+    order: 2;
+  }
+
+  .img-right {
+    order: 1;
+  }
+
+  .text-section2 {
+    text-align: left;
+  }
+
+  .custom-hr {
+    width: 405px;
+    border: 1.5px solid;
+  }
+
+  .paragraph-section3 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .params-value-section3 {
+    gap: 0rem;
+    margin-top: 0rem;
+    padding: 0px 0px 0px 0px;
+  }
+
+  .paragraph-value {
+    max-width: 100%;
+  }
+
+  .custom-value {
+    margin-top: 0rem;
+  }
+
+  .paragraph-section5 {
+    max-width: 420px;
+    color: grey;
+  }
+
+  .param-section5 {
+    padding: 0px 0px;
+  }
+
+  .param-child-section5 {
+    margin-top: 0rem;
+  }
+
+  .div-param-location-section6 {
+    gap: 0rem;
+    padding-top: 34rem;
+    flex-wrap: wrap;
+  }
+
+  .text-jakarta-section6 {
+    font-size: 53px;
+  }
+
+  .div-address-section6 {
+    font-size: 6.97px;
+    margin-top: -1.5rem;
+  }
+
+  .custom-container-location-section6 {
+    background-size: cover, cover;
+    height: 647px;
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom;
+  }
+}
