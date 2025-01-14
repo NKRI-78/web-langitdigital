@@ -1,5 +1,5 @@
 <?= view('layouts/header'); ?>
-<?= view('layouts/navBar'); ?>
+<?= view('layouts/navbar'); ?>
 
 <style>
     .swiper {

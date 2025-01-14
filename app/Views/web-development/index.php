@@ -1,5 +1,5 @@
 <?= view('layouts/header'); ?>
-<?= view('layouts/navBar'); ?>
+<?= view('layouts/navbar'); ?>
 
 <section class="container d-flex justify-content-between align-items-center" id="hero">
 <div class="left-side">
