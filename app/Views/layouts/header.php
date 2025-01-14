@@ -8,6 +8,7 @@
     <meta name="description" content="Website PT Langit Digital Tujuh Delapan" />
     <meta name="keywords" content="website, company profile, langit digital tujuh delapan" />
     <meta content="pt langit digital tujuh delapan" name="author" />
+    <meta property="og:image" content="<?= base_url('public/images/LOGO-LD.png') ?>" />
 
     <link rel="shortcut icon" href="<?= base_url('public/images/LOGO-LD.png') ?>" />
 

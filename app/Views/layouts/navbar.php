@@ -21,13 +21,13 @@
                     <a class="nav-link <?= (current_url() == base_url("/about-us")) ? 'active' : '' ?>" href="<?= base_url("/about-us") ?>">Tentang Kami</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#service">Layanan</a>
+                    <a class="nav-link" href="<?= base_url("/#service") ?>">Layanan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#portofolio">Portfolio</a>
+                    <a class="nav-link" href="<?= base_url("/#portofolio") ?>">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link mb-3 mb-lg-0" href="#contact">Kontak</a>
+                    <a class="nav-link mb-3 mb-lg-0" href="<?= base_url("/#contact") ?>">Kontak</a>
                 </li>
             </ul>
         </div>

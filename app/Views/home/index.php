@@ -2,6 +2,10 @@
 <?= view('layouts/navbar'); ?>
 
 <style>
+    .customNav {
+        flex-grow: 0 !important;
+    }
+
     .swiper {
         width: 100%;
         padding: 20px 0;
