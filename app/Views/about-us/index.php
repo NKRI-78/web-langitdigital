@@ -60,7 +60,7 @@
             <h2 class="text-center paragraph-section3">Menjadi Digital Platform Indonesia yang terpercaya, profesional dan berorientasi pada hasil yang diinginkan oleh klien</h2>
             <h3 class="title-section3">OUR VISSION</h3>
         </div>
-        <div class="d-flex flex-wrap px-lg-5">
+        <div class="d-flex flex-wrap">
             <div>
                 <hr class="custom-hr">
                 <h3 class="text-vision py-2">We positifly impac society through technologya and human skill</h3>

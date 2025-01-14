@@ -708,27 +708,35 @@
 
   /* location */
   .div-param-location{
-    display: block;
+    /* display: block;
     padding-top: 32.7rem;
-    padding-left: 0.5rem;
+    padding-left: 0.5rem; */
+    gap: 0rem;
+    flex-wrap: wrap;
+    padding-top: 524px;
+    padding-left: 10px;
   }
 
   .text-jakarta{
-    font-size: 61px;
+    /* font-size: 61px; */
+    font-size: 53px;
   }
 
   .div-address{
-    font-size: 6.97px;
+    /* font-size: 6.97px;
+    margin-top: -1.5rem; */
+    font-size: 10.97px;
     margin-top: -1.5rem;
   }
 
   .text-address{
-    margin-top: -0.5rem;
-    max-width: 65%;
+    /* margin-top: -0.5rem;
+    max-width: 65%; */
+    margin-top: -14px;
   }
 
   .title-footer{
-    font-size:30px;
+    font-size:26px;
   }
 
   .div-param-location {
