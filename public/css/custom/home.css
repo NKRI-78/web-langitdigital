@@ -224,12 +224,18 @@
 
 .custom-text-title-service-web,
 .custom-text-title-service-mobile,
-.custom-text-title-service-cms,
 .custom-text-title-service-uiux{
   font-weight: 600;
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
   padding-left: 2.5rem;
+}
+
+.custom-text-title-service-cms{
+  font-weight: 600;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 0.5rem;
 }
 
 .paragraph-service {
@@ -606,22 +612,9 @@
     padding-bottom: 2rem;
   }
 
-  .custom-item-mobile{
-    /* left: 2px;
-    top: -45px;
-    padding: 2rem; */
-  }
-
-  .custom-item-cms{
-    /* left: 0px;
-    top: -1.5rem;
-    padding: 2rem; */
-  }
-
-  .custom-item-uiux{
-    /* left: 6px;
-    top: -5px;
-    padding: 3rem; */
+  .custom-div-porto{
+    padding-left: 0rem;
+    padding: 10px;
   }
 
   .custom-text-title-service-mobile{
@@ -645,11 +638,11 @@
   }
 
   .custom-text-porto{
-    font-size: 33px;
-        line-height: 35px;
-        position: absolute;
-        top: 1rem;
-        padding-right: 1rem;
+    font-size: 29px;
+    line-height: 35px;
+    position: absolute;
+    top: 1rem;
+    padding-right: 1rem;
   }
 
   .div-custom-col-porto{
@@ -673,8 +666,9 @@
     position: absolute;
     transform: rotate(0deg);
     font-size: 3rem;
-    left: 83px;
+    /* left: 83px; */
     top: -58px;
+    margin-left: 313px;
   }
 
   .text-title-about{
@@ -699,15 +693,17 @@
   }
 
   .our-location{
-    margin-left: 6rem;
+    margin-left: 59px;
     margin-top: 3rem;
   }
 
   .custom-text-rotation-right-testimonial{
     transform: rotate(-0deg);
-    font-size: 3rem;
-    right: 3rem;
-    top: 55rem;
+    font-size: 2.8rem;
+    /* right: 3rem;
+    top: 55rem; */
+    margin-right: 334px;
+    margin-bottom: -38rem;
   }
 
   /* location */
@@ -751,3 +747,14 @@
   }
 }
 
+@media (max-width: 426px) {
+  .custom-text-rotation-right {
+    font-size: 2.9rem;
+    right: 52px;
+    top: -42px;
+}
+
+.title-client{
+  margin-left: 1.5rem;
+}
+}
