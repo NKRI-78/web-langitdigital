@@ -20,10 +20,10 @@
 
     <!-- Page-specific CSS -->
     <?php if (!empty($css_file)): ?>
-        <link rel="stylesheet" href="<?= base_url($css_file) ?>">
+        <link rel="stylesheet" href="<?= base_url($css_file . '?v=' . time())?>">
     <?php endif; ?>
     
-    <link rel="stylesheet" href="<?= base_url('public/css/custom/global.css') ?>">
+    <link rel="stylesheet" href="<?= base_url('public/css/custom/global.css?v=' . time()) ?>">
 
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.min.css') ?>" type="text/css" />
