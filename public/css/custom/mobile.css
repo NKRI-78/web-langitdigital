@@ -214,12 +214,12 @@
 
   #hero .right-side > img.mobile-img {
     right: 0;
-    width: 26rem;
+    width: 24rem;
     top: 48px;
   }
 
   #ourWorks .content-wrapper .image-container {
-    width: 22rem;
+    width: 100%;
   }
 
   #ourWorks .content-wrapper .features-wrapper {
