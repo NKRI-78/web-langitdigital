@@ -20,9 +20,9 @@
             Kami ingin berkontribusi dengan memberikan pelayanan terbaik dalam bidang Teknologi, kami siap membantu mewujudkan apa yang anda pikirkan dan kami terus berkarya dengan pengalaman yang kami miliki dan terus kami update mengikuti perkembangan teknologi terkini yang terus berkembang. dengan cepat
         </p>
     </div>
-    <div class="col-lg-12 col-sm-12 d-flex flex-wrap justify-content-center param-section">
+    <div class="col-lg-12 col-sm-12 d-flex flex-wrap justify-content-center param-section px-lg-5">
         <div class="d-lg-flex justify-content-center align-items-center gap-lg-4 mt-lg-5">
-            <img class="img-weare" src="<?= base_url('public/images/who-weare.svg') ?>" alt="">
+            <img class="img-fluid img-weare" src="<?= base_url('public/images/who-weare.svg') ?>" alt="">
             <div class="text-left py-lg-5">
                 <h3>Who we are ?</h3>
                 <p class="paragraph-section2">Langit Digital 78 merupakan perusahaan swasta yang
@@ -48,7 +48,7 @@
                     besar di dunia
                 </p>
             </div>
-            <img class="img-weare img-right" src="<?= base_url('public/images/who-weare.svg') ?>" alt="">
+            <img class="img-fluid img-weare img-right" src="<?= base_url('public/images/who-weare.svg') ?>" alt="">
         </div>
     </div>
 </section>
@@ -60,7 +60,7 @@
             <h2 class="text-center paragraph-section3">Menjadi Digital Platform Indonesia yang terpercaya, profesional dan berorientasi pada hasil yang diinginkan oleh klien</h2>
             <h3 class="title-section3">OUR VISSION</h3>
         </div>
-        <div class="d-flex flex-wrap justify-content-center">
+        <div class="d-flex flex-wrap px-lg-5">
             <div>
                 <hr class="custom-hr">
                 <h3 class="text-vision py-2">We positifly impac society through technologya and human skill</h3>
@@ -76,9 +76,9 @@
             </div>
             <div>
                 <h3 class="text-vision py-2">We are one LangitDigital78</h3>
-                <hr class="custom-hr">
             </div>
             <div>
+                <hr class="custom-hr">
                 <h3 class="text-vision py-2">We will become a company that represents the 21st century of this country</h3>
                 <hr class="custom-hr">
             </div>

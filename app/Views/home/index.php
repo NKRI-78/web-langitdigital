@@ -98,7 +98,7 @@
                     <p class="custom-paragraph-home">Web Developer, Mobile Apps, Ui/Ux Design</p>
                     <div class="d-flex gap-2">
                         <img src="<?= base_url('public/images/mouse.png') ?>" alt="img" width="16" height="22">
-                        <p class="custom-readmore">Scroll to read more</p>
+                        <a href="#service" class="custom-readmore">Scroll to read more</a>
                     </div>
                 </div>
             </div>
