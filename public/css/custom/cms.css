@@ -1,0 +1,156 @@
+.div-sectionCms {
+  display: flex;
+  justify-content: space-between;
+  top: 2rem;
+}
+
+.sectionCms-text {
+  font-size: 25px;
+  color: #293c93;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+}
+
+.sectionCms-text2 {
+  font-size: 47px;
+  font-family: "Gilroy-Bold", sans-serif;
+  font-weight: 600;
+}
+
+.div-sectionCms-img {
+  background-color: #283a8f;
+  margin-right: -4.6rem;
+  width: 52%;
+}
+
+.custom-paragraph {
+  max-width: 440px;
+  color: grey;
+  line-height: 21px;
+}
+
+.div-params-section {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 4rem;
+}
+
+.custom-swiper-slide-cms {
+  width: 34rem !important;
+}
+
+.swiper-slide .item-slide-cms {
+  width: 22rem;
+}
+
+/* css new */
+/* #hero .right-side > img.img-cms {
+  position: absolute;
+  top: -37px;
+  right: -73px;
+  width: 47rem;
+}
+
+#hero .left-side {
+  padding-left: 2rem;
+}
+
+.hero-subtitle {
+  color: #293c93;
+}
+
+.hero-title {
+  padding-right: 36rem;
+  font-size: 3rem;
+  line-height: 1.1;
+}
+
+#hero .right-side {
+  position: relative;
+  height: 35rem;
+} */
+
+.param-section1 {
+  margin-top: 5rem;
+}
+
+.img-section1 {
+  position: absolute;
+  width: 850px;
+  margin-left: -21rem;
+  z-index: 2;
+}
+
+.param-section1-pc {
+  background-color: #293c93;
+  height: 33rem;
+  width: 33rem;
+}
+
+.item-bulet-section1 {
+  position: absolute;
+  left: 34.5rem;
+  bottom: 1rem;
+  z-index: 1;
+}
+
+.text-section2 {
+  font-size: 22px;
+  color: grey;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.param-div-section2 {
+  padding-top: 11rem;
+}
+
+.custom-text-section4 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+@media (max-width: 426px) {
+  .param-section1 {
+    margin-top: -6rem;
+  }
+
+  .param-section1-pc {
+    background-color: #293c93;
+    height: 18rem;
+    width: 100%;
+  }
+
+  .img-section1 {
+    /* width: 450px; */
+    width: 421px;
+    margin-left: -4rem;
+  }
+
+  .item-bulet-section1 {
+    display: none;
+  }
+
+  .text-section2 {
+    font-size: 16px;
+  }
+
+  .param-div-section2 {
+    padding-top: 0rem;
+  }
+
+  .custom-text-section4 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 44px;
+  }
+}
+
+@media (max-width: 375px) {
+  .img-section1 {
+    width: 421px;
+    margin-left: -6rem;
+  }
+}
