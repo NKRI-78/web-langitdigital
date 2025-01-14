@@ -208,7 +208,7 @@ Indonesia
     <div class="d-flex justify-content-between content-wrapper features-wrapper">
             <div>
                 <div class="image-container" >
-                    <img class="img-mini" src="<?= base_url('public/images/YAMAHA-4x.png') ?>" alt="bulet">
+                    <img class="img-mini" src="<?= base_url('public/images/YAMAHA-4X.png') ?>" alt="bulet">
                     <img class="hover-image" src="<?= base_url('public/images/YAMAHA-2-4X.png') ?>" alt="web">
                 </div>
                 <div class="mt-3">
