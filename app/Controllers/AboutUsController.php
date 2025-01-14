@@ -10,7 +10,11 @@ class AboutUsController extends BaseController
 {
     public function index()
     {
-        return view("about-us/index");
+        $data = [
+            'css_file' => 'public/css/custom/about-us.css',
+        ];
+
+        return view("about-us/index", $data);
     }
 
     // public function store()

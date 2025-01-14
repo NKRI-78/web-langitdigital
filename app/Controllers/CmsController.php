@@ -10,7 +10,11 @@ class CmsController extends BaseController
 {
     public function index()
     {
-        return view("content-managment-system/index");
+        $data = [
+            'css_file' => 'public/css/custom/cms.css',
+        ];
+
+        return view("content-managment-system/index", $data);
     }
 
     // public function store()

@@ -10,7 +10,11 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        return view("home/index");
+        $data = [
+            'css_file' => 'public/css/custom/home.css',
+        ];
+
+        return view("home/index", $data);
     }
 
     // public function store()
