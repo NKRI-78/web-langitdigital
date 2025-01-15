@@ -20,7 +20,7 @@
                 <img src="<?= base_url('public/images/Email.png') ?>" alt="wa" width="45" height="45">
                 <div class="text-left">
                     <p style="margin-bottom: -1px;">EMAIL US ANYTIME</p>
-                    <a href="javascript:void(0)" class="text-footer" onclick="copyToClipboard('langitdigital78@gmail.com')">langitdigital78@gmail.com</a>
+                    <a href="javascript:void(0)" class="text-footer footer-email" onclick="copyToClipboard('langitdigital78@gmail.com')">langitdigital78@gmail.com</a>
                 </div>
             </div>
         </div>
