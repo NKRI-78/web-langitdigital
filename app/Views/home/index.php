@@ -2,10 +2,6 @@
 <?= view('layouts/navbar'); ?>
 
 <style>
-    .customNav {
-        flex-grow: 0 !important;
-    }
-
     .swiper {
         width: 100%;
         padding: 20px 0;
@@ -66,22 +62,8 @@
 
 
     @media (max-width: 426px) {
-        /* .custom-stars {
-            margin-left: -11rem;
-            text-align: left;
-        } */
-
-        .card {
-            width: 71%;
-        }
-
         .swiper-slide {
             justify-content: normal;
-        }
-
-        .custom-swiper-slide-home {
-            width: 34rem !important;
-            /* margin-right: -143px; */
         }
 
         #customSwiper {
@@ -90,7 +72,7 @@
     }
 </style>
 
-<section class="container py-5">
+<section class="container py-lg-5">
     <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
             <img class="img-home" src="<?= base_url('public/images/home.png') ?>" alt="home" style="max-width: 100%;">
@@ -112,8 +94,8 @@
 
 <section id="service" class="container d-lg-flex d-md-flex flex-lg-wrap justify-content-center position-relative custom-div-service">
     <h3 class="custom-text-rotation-right">Our Services</h3>
-    <div class="col-lg-6 col-md-12 col-sm-12 div-custom-col-porto pe-lg-4 ps-lg-5">
-        <h3 class="custom-text-service ps-3"> We Create <br> Digital Products <br> as Your Solution</h3>
+    <div class="col-lg-6 col-md-12 col-sm-12 pe-lg-4 ps-lg-5 div-custom-col-porto">
+        <h3 class="custom-text-service ps-lg-3"> We Create <br> Digital Products <br> as Your Solution</h3>
         <div class="d-flex position-relative pt-lg-4 pt-sm-3 ps-lg-5 custom-div-parent-img">
             <img class="img-fluid" src="<?= base_url('public/images/bulet.png') ?>" alt="">
             <img class="img-fluid" src="<?= base_url('public/images/kotak.png') ?>" alt="">
@@ -244,7 +226,7 @@
 
 <section id="aboutUs" class="container pt-5 d-lg-flex justify-content-center">
     <div class="col-lg-12 col-md-12 col-sm-12 position-relative">
-        <h2 class="text-title-about">What Our Clients <br> Say About Us</h2>
+        <h2 class="text-title-about">What Our Clients Say About Us</h2>
         <img class="item-squer-about" src="<?= base_url('public/images/squer.png') ?>" alt="">
         <div class="swiper mt-5" id="customSwiper">
             <div class="swiper-wrapper container text-center div-swiper">
@@ -406,17 +388,14 @@
 <script>
     var swiper = new Swiper('.swiper', {
         slidesPerView: 'auto',
-        spaceBetween: 1,
+        spaceBetween: 20,
+        slidesOffsetAfter: 10,
+        slidesOffsetBefore: 10,
         // autoplay: {
         // delay: 5000
         // }
         breakpoints: {
-            // Ketika lebar layar lebih kecil dari 426px
-            0: { // Untuk mobile
-                slidesPerView: 1,
-                spaceBetween: 10,
-            },
-            768: { // Untuk tablet/desktop
+            500: { // Untuk tablet/desktop
                 slidesPerView: 2,
                 spaceBetween: 10,
             },

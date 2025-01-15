@@ -4,7 +4,7 @@
 <section class="container d-lg-flex d-md-flex custom-section1">
     <div class="col-lg-6 col-md-6 col-sm-12 position-relative">
         <p class="text-title-aboutus">
-            Remove word <br> limits, explore <br> wider with Technology
+            Remove word limits, explore wider with Technology
         </p>
         <img class="item-squer-left" src="<?= base_url('public/images/squer.png') ?>" alt="">
     </div>
@@ -60,7 +60,7 @@
             <h2 class="text-center paragraph-section3">Menjadi Digital Platform Indonesia yang terpercaya, profesional dan berorientasi pada hasil yang diinginkan oleh klien</h2>
             <h3 class="title-section3">OUR VISSION</h3>
         </div>
-        <div class="d-flex flex-wrap">
+        <div class="d-flex flex-wrap justify-content-lg-center">
             <div>
                 <hr class="custom-hr">
                 <h3 class="text-vision py-2">We positifly impac society through technologya and human skill</h3>

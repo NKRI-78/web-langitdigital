@@ -170,13 +170,11 @@
   }
 
   .img-section1 {
-    /* width: 450px; */
     width: 421px;
-    margin-left: -11rem;
+    margin-left: -12rem;
   }
 
   .item-bulet-section1 {
-    /* display: none; */
     width: 30px;
     left: -90px;
   }
@@ -197,7 +195,7 @@
 
   .custom-swiper-slide-cms {
     /* width: 34rem !important; */
-    width: 21rem !important;
+    width: 22rem !important;
   }
 
   .swiper-wrapper {
