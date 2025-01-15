@@ -95,7 +95,7 @@
 <section id="service" class="container d-lg-flex d-md-flex flex-lg-wrap justify-content-center position-relative custom-div-service">
     <h3 class="custom-text-rotation-right">Our Services</h3>
     <div class="col-lg-6 col-md-12 col-sm-12 pe-lg-4 ps-lg-5 div-custom-col-porto">
-        <h3 class="custom-text-service ps-lg-3"> We Create <br> Digital Products <br> as Your Solution</h3>
+        <h3 class="custom-text-service ps-lg-3"> We Create Digital Products as Your Solution</h3>
         <div class="d-flex position-relative pt-lg-4 pt-sm-3 ps-lg-5 custom-div-parent-img">
             <img class="img-fluid" src="<?= base_url('public/images/bulet.png') ?>" alt="">
             <img class="img-fluid" src="<?= base_url('public/images/kotak.png') ?>" alt="">
@@ -173,8 +173,8 @@
         <h6 class="text-child-title">Mobile Apps</h6>
     </div>
     <div class="col-lg-6 col-md-12 col-sm-12 div-custom-col-porto pe-lg-4">
-        <h3 class="custom-text-porto py-lg-5">Many Partners trusted <br>
-            us to creat them Web <br>
+        <h3 class="custom-text-porto py-lg-5">Many Partners trusted
+            us to creat them Web
             Site and Mobile Apps</h3>
         <div class="image-container-home ps-lg-4">
             <img class="img-fluid img-porto" src="<?= base_url('public/images/MERCEDES-4X.png') ?>" alt="mercedes">

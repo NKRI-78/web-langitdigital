@@ -40,7 +40,7 @@
 }
 
 .div-logo-index1 {
-  width: 118px;
+  width: 116px;
   height: 119px;
   display: flex;
   align-items: center;
@@ -561,7 +561,7 @@
   }
 
   .custom-text-service{
-    font-size: 25px;
+    font-size: 23px;
     line-height: 35px;
   }
 
@@ -623,7 +623,7 @@
   }
 
   .custom-text-porto{
-    font-size: 25px;
+    font-size: 19px;
     line-height: 35px;
     position: absolute;
     top: 0rem;
@@ -638,7 +638,7 @@
 
   .custom-mini{
     /* margin-top: 0rem; */
-    margin-top: 25px;
+    margin-top: -16px;
   }
 
   .custom-koperasi{
@@ -676,10 +676,10 @@
   }
 
   .param-logo-client {
-    justify-content: space-between;
+    justify-content: center;
     padding: 0 0;
     gap: 0rem;
-    margin-left: 2rem;
+    margin-left: 0rem;
   }
 
   .title-client{
