@@ -6,3 +6,34 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif !important;
 }
+
+/* navbar */
+.customNav {
+  flex-grow: 0 !important;
+}
+
+/* css footer */
+.container-footer{
+  background-color: #293C93; 
+  color:#fff
+}
+
+.text-footer{
+  font-weight: 700; 
+  color: #fff
+}
+
+.custom-div-footer{
+  padding: 1rem;
+}
+
+.title-footer{
+  font-size:66px;
+  font-weight: bold;
+}
+
+@media (max-width: 426px) {
+  .title-footer{
+    font-size:26px;
+  }
+}
