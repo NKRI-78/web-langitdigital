@@ -391,9 +391,10 @@
         spaceBetween: 20,
         slidesOffsetAfter: 10,
         slidesOffsetBefore: 10,
-        // autoplay: {
-        // delay: 5000
-        // }
+        autoplay: {
+        delay: 5000
+        },
+        loop: true,
         breakpoints: {
             500: { // Untuk tablet/desktop
                 slidesPerView: 2,
