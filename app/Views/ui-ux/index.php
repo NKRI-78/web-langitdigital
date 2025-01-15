@@ -24,7 +24,7 @@ Indonesia
 
 <section class="container" id="slider-process">
     <div class="slider-title">
-        <h5 class="fs-1 fw-bold">Proses Desain Grafis Kami</h5>
+        <h5 class="fw-bold">Proses Desain Grafis Kami</h5>
     </div>
     <div class="swiper" id="customSwiper">
         <div class="swiper-wrapper container">
@@ -114,7 +114,7 @@ Indonesia
 <script>
    var swiper = new Swiper('.swiper', {
     slidesPerView: 1,
-    spaceBetween: 30,
+    spaceBetween: 50,
     autoplay: {
         delay: 5000
     },
