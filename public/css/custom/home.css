@@ -626,12 +626,12 @@
     font-size: 25px;
     line-height: 35px;
     position: absolute;
-    top: 1rem;
+    top: 0rem;
     padding-right: 1rem;
   }
 
   .div-custom-col-porto{
-    padding: 0rem;
+    padding: 0px 15px;
     padding-bottom: 2rem;
     /* margin-top: 83px; */
   }
