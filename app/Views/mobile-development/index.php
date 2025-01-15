@@ -243,10 +243,18 @@ Indonesia
 <?= view('layouts/script'); ?>
 <script>
    var swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
-    spaceBetween: 2,
-    // autoplay: {
-    //     delay: 5000
-    // }
+    slidesPerView: 'auto',
+    slidesOffsetAfter: 40,
+    slidesOffsetBefore: 30,
+    // spaceBetween: 30,
+    autoplay: {
+        delay: 5000
+    },
+    breakpoints: {
+        480: {
+            slidesPerView: 'auto',
+            spaceBetween: 10
+        }
+    }
     });
 </script>

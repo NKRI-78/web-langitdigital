@@ -50,6 +50,10 @@
   padding: 0 3rem;
 }
 
+#slider-process > .slider-title > h5 {
+  font-size: 1.6875rem;
+}
+
 #slider-process > .swiper {
   padding: 2rem;
 }
@@ -162,6 +166,14 @@
     order: 1;
   }
 
+  #hero .left-side .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  #hero .left-side .hero-title {
+    font-size: 2rem;
+  }
+
   #hero .right-side {
     width: 100%;
     height: 29rem;
@@ -183,12 +195,16 @@
 
   #hero .right-side > img.mobile-img {
     right: 0;
-    width: 24rem;
-    top: 88px;
+    width: 95vw;
+    top: 92px;
   }
 
   #slider-process > .slider-title {
     padding: 2rem 1rem 0 1rem;
+  }
+
+  #slider-process > .slider-title > h5 {
+    font-size: 1.5625rem;
   }
 
   .portofolio-wrapper .content {

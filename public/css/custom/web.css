@@ -151,6 +151,14 @@
     order: 1;
   }
 
+  #hero .left-side .hero-subtitle {
+    font-size: 1.125rem;
+  }
+
+  #hero .left-side .hero-title {
+    font-size: 2rem;
+  }
+
   #hero .right-side {
     width: 100%;
     height: 29rem;
@@ -172,8 +180,8 @@
 
   #hero .right-side > img {
     right: 0;
-    width: 26rem;
-    top: 48px;
+    width: 95vw;
+    top: 65px;
   }
 
   #ourWorks .content-wrapper .features-wrapper {
@@ -194,11 +202,12 @@
 
   #features > div > .left-side {
     margin-top: 2rem;
-    padding-left: 2rem;
+    padding: 0 2rem;
   }
 
   #features > div > .right-side {
     padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 1rem !important;
   }
 
