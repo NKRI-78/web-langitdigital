@@ -2,16 +2,16 @@
 <?= view('layouts/navbar'); ?>
 
 <section class="container d-lg-flex py-sm-5 param-section1">
-    <div class="col-lg-7 col-md-12 col-sm-12">
-        <div style="margin-top: 14rem;">
+    <div class="col-lg-7 col-md-12 col-sm-12 section1-bottom">
+        <div class="param-text-section1">
             <h3 class="sectionCms-text">Content Managment System</h3>
-            <h2 class="sectionCms-text2">CMS Development <br> in Indonesia</h2>
+            <h2 class="sectionCms-text2">CMS Development in Indonesia</h2>
         </div>
     </div>
-    <div class="col-lg-6 col-md-12 col-sm-12 param-section1-pc">
+    <div class="col-lg-6 col-md-12 col-sm-12 position-relative param-section1-pc">
         <img class="img-section1" src="<?= base_url('public/images/CONTENT-MANAGEMNT-SYSTEM-4x.png') ?>" alt="">
+        <img class="item-bulet-section1" src="<?= base_url('public/images/bulet.svg') ?>" alt="item-bulet">
     </div>
-    <img class="item-bulet-section1" src="<?= base_url('public/images/bulet.svg') ?>" alt="item-bulet">
 </section>
 
 <section class="container">
@@ -78,6 +78,37 @@
     </div>
 </section>
 
+<section id="slider-cms" class="container">
+    <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+        <h5 class="fs-3">CMS Category</h5>
+        <p>There are many types of CMS you can make here at LangitDigital</p>
+    </div>
+    <div class="swiper" id="customSwiper">
+        <div class="swiper-wrapper container text-center">
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-mhs.png') ?> alt="cms mhs">
+                <h6>Metro Hotelschool</h6>
+            </div>
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-atj.png') ?> alt="cms atj">
+                <h6>Asosiasi Tiger Jakarta</h6>
+            </div>
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-4medan.png') ?> alt="cms 4 medan">
+                <h6>SMA 4 Medan</h6>
+            </div>
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-fspmi.png') ?> alt="cms fspmi">
+                <h6>FSPMI</h6>
+            </div>
+            <div class="swiper-slide custom-swiper-slide-cms">
+                <img class="item-slide-cms" src=<?= base_url('public/images/cms-hp3ki.png') ?> alt="cms hp3ki">
+                <h6>HP3KI</h6>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="container">
     <div class="col-lg-12 col-md-12 col-sm-12 d-flex flex-column row-gap-4 d-flex m-auto text-center my-4">
         <div class="d-flex flex-column">
@@ -95,7 +126,7 @@
         <h3 class="custom-text-section4">Our Works on <br> Website Development</h3>
         <div class="image-container-home">
             <img class="img-fluid img-porto" src="<?= base_url('public/images/fspmi-4x.png') ?>" alt="mini-cooper">
-            <img class="img-fluid hover-img-porto" src="<?= base_url('public/images/fspmi-2-4x.png') ?>" alt="">
+            <img class="img-fluid hover-img-porto img-porto" src="<?= base_url('public/images/fspmi-2-4x.png') ?>" alt="">
         </div>
         <div>
             <h6 class="text-title-porto">FSPMI Data Base</h6>
@@ -264,10 +295,18 @@
 <?= view('layouts/script'); ?>
 <script>
     var swiper = new Swiper('.swiper', {
-        slidesPerView: 2,
-        spaceBetween: 5,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+        slidesOffsetAfter: 50,
+        slidesOffsetBefore: 50,
         // autoplay: {
         // delay: 5000
         // }
-    });
+        breakpoints: {
+            500: { // Untuk tablet/desktop
+                slidesPerView: 2,
+                spaceBetween: 50,
+            },
+        },
+    })
 </script>
