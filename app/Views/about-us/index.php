@@ -179,7 +179,7 @@
         <h3 class="text-jakarta-section6">JAKARTA</h3>
         <div class="div-address-section6">
             <h5 class="font-weight-bold">PT LANGIT DIGITAL TUJUH DELAPAN</h5>
-            <p class="text-address-section6">Jl. Kemang Selatan IX No.9A, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730</p>
+            <p class="text-address-section6" onclick="redirectToMaps()">Jl. Kemang Selatan IX No.9A, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730</p>
         </div>
     </div>
 </section>
@@ -192,3 +192,10 @@
 
 <?= view('layouts/footer'); ?>
 <?= view('layouts/script'); ?>
+<script>
+    function redirectToMaps() {
+        const address = "Jl. Kemang Selatan IX No.9A, Bangka, Kec. Mampang Prpt., Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730";
+        const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+        window.open(mapsUrl, '_blank'); // Membuka di tab baru
+    }
+</script>
