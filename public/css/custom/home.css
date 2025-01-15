@@ -608,7 +608,8 @@
 
   .custom-text-rotation-right{
     transform: rotate(0deg);
-    font-size: 45px;
+    /* font-size: 45px; */
+    font-size: 2rem;
     right: 0px;
     top: 0px;
     position: relative;
@@ -653,15 +654,10 @@
   }
 
   .custom-text-rotation-left{
-    /* position: absolute; */
-    /* transform: rotate(0deg); */
-    /* font-size: 3rem; */
-    /* left: 83px; */
-    /* top: -58px; */
-    /* margin-left: 313px; */
     position: relative;
     transform: rotate(0deg);
-    font-size: 45px;
+    /* font-size: 45px; */
+    font-size: 2rem;
     left: 0px;
     top: -103px;
     text-align: center;
@@ -699,7 +695,8 @@
 
   .custom-text-rotation-right-testimonial{
     transform: rotate(-0deg);
-    font-size: 45px;
+    /* font-size: 45px; */
+    font-size: 2rem;
     bottom: 0px;
     right: 0px;
     position: relative;
