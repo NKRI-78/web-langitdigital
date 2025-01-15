@@ -441,6 +441,7 @@
 
 .text-address{
   max-width: 100%;
+  cursor: pointer;
 }
 
 .custom-text-porto{
