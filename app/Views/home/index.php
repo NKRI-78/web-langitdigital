@@ -74,7 +74,7 @@
 
 <section class="container py-lg-5">
     <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 param-home">
             <img class="img-home" src="<?= base_url('public/images/home.png') ?>" alt="home" style="max-width: 100%;">
             <div class="d-flex">
                 <div class="div-home mb-3">

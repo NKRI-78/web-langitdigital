@@ -754,6 +754,10 @@
     font-size: 21px;
     padding-top: 5px;
   }
+
+  .param-home{
+    padding-top: 3rem;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 426px) {
