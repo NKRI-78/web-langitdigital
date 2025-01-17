@@ -392,13 +392,15 @@
         slidesOffsetAfter: 10,
         slidesOffsetBefore: 10,
         autoplay: {
-        delay: 5000
+            delay: 5000
         },
         loop: true,
         breakpoints: {
             500: { // Untuk tablet/desktop
                 slidesPerView: 2,
                 spaceBetween: 10,
+                slidesOffsetAfter: 5,
+                slidesOffsetBefore: 5,
             },
         },
     });
